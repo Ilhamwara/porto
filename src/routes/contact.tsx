@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { Mail, Phone, MapPin, Linkedin, Github, Globe } from "lucide-react";
-import { profile } from "@/data/profile";
+import { Mail, Globe } from "lucide-react";
+import { profile } from "../data/profile";
 
 export const Route = createFileRoute("/contact")({
   head: () => ({
@@ -23,8 +23,8 @@ export const Route = createFileRoute("/contact")({
 function ContactPage() {
   const items = [
     { icon: Mail, label: "Email", value: profile.email, href: `mailto:${profile.email}` },
-    { icon: Linkedin, label: "LinkedIn", value: "Ilham Wara Nugroho", href: profile.linkedin },
-    { icon: Github, label: "GitHub", value: "ilhamwara", href: profile.github },
+    { icon: Globe, label: "LinkedIn", value: "Ilham Wara Nugroho", href: profile.linkedin },
+    { icon: Globe, label: "GitHub", value: "ilhamwara", href: profile.github },
     { icon: Globe, label: "Portfolio", value: "ilhamwara.web.id", href: profile.portfolio },
   ];
 

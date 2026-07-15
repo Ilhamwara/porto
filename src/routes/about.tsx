@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Check } from "lucide-react";
-import { profile } from "@/data/profile";
-import { BentoCard } from "@/components/bento-card";
+import { profile } from "../data/profile";
+import { BentoCard } from "../components/bento-card";
 
 export const Route = createFileRoute("/about")({
   head: () => ({

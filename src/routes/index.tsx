@@ -1,37 +1,36 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
-import { ArrowRight, Mail, MapPin, Github, Linkedin } from "lucide-react";
-import { BentoCard } from "@/components/bento-card";
-import { profile } from "@/data/profile";
-import { projectGroups } from "@/data/projects";
+import { createFileRoute,Link } from '@tanstack/react-router'
+import { ArrowRight, Mail, MapPin } from "lucide-react";
+import { BentoCard } from "../components/bento-card";
+import { profile } from "../data/profile";
+import { projectGroups } from "../data/projects";
 
-export const Route = createFileRoute("/")({
-  head: () => ({
-    meta: [
-      { title: "Ilham Wara Nugroho — Senior Full Stack Software Engineer" },
-      {
-        name: "description",
-        content:
-          "Senior Full Stack Engineer with 9+ years building enterprise & government systems for BPOM, BNPB, LPDP, and DKI Jakarta. Laravel · .NET · React · Next.js.",
-      },
-      { property: "og:title", content: "Ilham Wara Nugroho — Portfolio" },
-      {
-        property: "og:description",
-        content:
-          "Selected work & experience delivering enterprise-grade systems for Indonesian government and private organizations.",
-      },
-      { property: "og:url", content: "/" },
-    ],
-    links: [{ rel: "canonical", href: "/" }],
-  }),
-  component: Index,
-});
+export const Route = createFileRoute('/')({
+    head: () => ({
+        meta: [
+        { title: "Ilham Wara Nugroho — Senior Full Stack Software Engineer" },
+        {
+            name: "description",
+            content:
+            "Senior Full Stack Engineer with 9+ years building enterprise & government systems for BPOM, BNPB, LPDP, and DKI Jakarta. Laravel · .NET · React · Next.js.",
+        },
+        { property: "og:title", content: "Ilham Wara Nugroho — Portfolio" },
+        {
+            property: "og:description",
+            content:
+            "Selected work & experience delivering enterprise-grade systems for Indonesian government and private organizations.",
+        },
+        { property: "og:url", content: "/" },
+        ],
+        links: [{ rel: "canonical", href: "/" }],
+    }),
+  component: HomePage,
+})
 
-function Index() {
-  const featuredClients = ["BPOM", "DLH DKI Jakarta", "BNPB", "LPDP", "Kemendikbud", "IPB"];
-  const coreTech = ["Laravel", ".NET", "React", "Next.js", "PostgreSQL", "Docker", "REST API", "TypeScript"];
+function HomePage() {
+    const featuredClients = ["BPOM", "DLH DKI Jakarta", "BNPB", "LPDP", "Kemendikbud", "IPB"];
+    const coreTech = ["Laravel", ".NET", "React", "Next.js", "PostgreSQL", "Docker", "REST API", "TypeScript"];
 
-  return (
-    <div className="mx-auto max-w-6xl px-6 py-12 sm:py-16">
+  return (<div className="mx-auto max-w-6xl px-6 py-12 sm:py-16">
       {/* Bento grid */}
       <section aria-label="Overview" className="grid grid-cols-1 gap-4 md:grid-cols-6 md:grid-rows-[auto_auto_auto]">
         {/* Hero */}
@@ -100,7 +99,7 @@ function Index() {
               rel="noreferrer"
               className="flex items-center gap-2 text-muted-foreground transition-colors hover:text-foreground"
             >
-              <Linkedin className="h-4 w-4" /> LinkedIn
+              {/* <Linkedin className="h-4 w-4" /> LinkedIn */}
             </a>
             <a
               href={profile.github}
@@ -108,7 +107,7 @@ function Index() {
               rel="noreferrer"
               className="flex items-center gap-2 text-muted-foreground transition-colors hover:text-foreground"
             >
-              <Github className="h-4 w-4" /> github.com/ilhamwara
+              {/* <Github className="h-4 w-4" /> github.com/ilhamwara */}
             </a>
           </div>
         </BentoCard>
@@ -205,8 +204,7 @@ function Index() {
           ))}
         </div>
       </section>
-    </div>
-  );
+    </div>);
 }
 
 function Stat({ n, label }: { n: string; label: string }) {

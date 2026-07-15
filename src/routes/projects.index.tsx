@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight } from "lucide-react";
-import { projectGroups } from "@/data/projects";
+import { projectGroups } from "../data/projects";
 
 export const Route = createFileRoute("/projects/")({
   head: () => ({
@@ -20,7 +20,7 @@ export const Route = createFileRoute("/projects/")({
     ],
     links: [{ rel: "canonical", href: "/projects" }],
   }),
-  component: ProjectsIndex,
+  component: ProjectsIndex, 
 });
 
 function ProjectsIndex() {

@@ -1,4 +1,4 @@
-import { cn } from "@/lib/utils";
+import { cn } from "../lib/utils";
 import type { ReactNode, HTMLAttributes } from "react";
 
 interface BentoCardProps extends HTMLAttributes<HTMLDivElement> {

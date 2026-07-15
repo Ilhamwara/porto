@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail } from "lucide-react";
+import { Mail } from "lucide-react";
 import { profile } from "@/data/profile";
 
 export function SiteFooter() {
@@ -23,7 +23,7 @@ export function SiteFooter() {
             rel="noreferrer"
             className="rounded-md border border-border p-2 text-muted-foreground transition-colors hover:border-primary hover:text-foreground"
           >
-            <Linkedin className="h-4 w-4" />
+            {/* <Linkedin className="h-4 w-4" /> */}
           </a>
           <a
             href={profile.github}
@@ -32,7 +32,7 @@ export function SiteFooter() {
             rel="noreferrer"
             className="rounded-md border border-border p-2 text-muted-foreground transition-colors hover:border-primary hover:text-foreground"
           >
-            <Github className="h-4 w-4" />
+            {/* <Github className="h-4 w-4" /> */}
           </a>
         </div>
       </div>

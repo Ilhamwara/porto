@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { profile } from "@/data/profile";
+import { profile } from "../data/profile";
 
 export const Route = createFileRoute("/experience")({
   head: () => ({
