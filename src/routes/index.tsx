@@ -27,8 +27,8 @@ export const Route = createFileRoute('/')({
 })
 
 function HomePage() {
-    const featuredClients = ["BPOM", "DLH DKI Jakarta", "BNPB", "LPDP", "Kemendikbud", "IPB"];
-    const coreTech = ["Laravel", ".NET", "React", "Next.js", "PostgreSQL", "Docker", "REST API", "TypeScript"];
+    const featuredClients = ["SMA Angkasa 2","BPOM", "DLH DKI Jakarta", "BNPB", "LPDP", "Kemendikbud", "IPB"];
+    const coreTech = ["Golang","Laravel", ".NET", "React", "Next.js", "PostgreSQL", "Docker", "REST API", "TypeScript"];
 
   return (<div className="mx-auto max-w-6xl px-6 py-12 sm:py-16">
       {/* Bento grid */}

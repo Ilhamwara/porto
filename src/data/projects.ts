@@ -10,6 +10,26 @@ export type ProjectGroup = {
 
 export const projectGroups: ProjectGroup[] = [
   {
+    slug: "sma-angkasa-2",
+    client: "SMA Angkasa 2",
+    period: "-",
+    summary:
+      "Digital services for indonesia education internal school, CBT, E-Library",
+    techStack: ["Laravel", "PostgreSQL","Golang","REACT", ".NET", "REST API"],
+    items: [
+      "SIMPATIK - (Laravel)",
+      "SMA Angkasa 2 - (Laravel)",
+      "E-Library - (React + Golang)",
+      "CBT - (CodeIgniter",
+    ],
+    responsibilities: [
+      "Designed backend architecture",
+      "Developed REST APIs",
+      "Optimized reporting modules",
+      "Deployed production infrastructure",
+    ],
+  },
+  {
     slug: "dlh-dki-jakarta",
     client: "Dinas Lingkungan Hidup DKI Jakarta",
     period: "2025 – Present",
