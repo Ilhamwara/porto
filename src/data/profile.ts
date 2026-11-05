@@ -3,12 +3,11 @@ export const profile = {
   role: "Senior Full Stack Software Engineer",
   location: "Bekasi, Indonesia",
   email: "ilhamwara@gmail.com",
-  phone: "+62 813-1645-3130",
-  linkedin: "https://www.linkedin.com/in/ilhamwara",
+  linkedin: "https://www.linkedin.com/in/ilham-wara-nugroho-a2951a118/",
   github: "https://github.com/ilhamwara",
   portfolio: "https://ilhamwara.web.id",
   summary:
-    "Senior Full Stack Software Engineer with over 9 years of experience designing, developing, and deploying enterprise-grade web and mobile applications. Specialized in Laravel, React, Next.js, PostgreSQL, REST APIs, and scalable backend architecture.",
+    "Senior Full Stack Software Engineer with over 9 years of experience designing, developing, and deploying enterprise-grade web and mobile applications. Specialized in Laravel, .NET, React, Go, PostgreSQL, REST APIs, and scalable backend architecture.",
   summaryLong:
     "Proven track record of delivering mission-critical systems for government agencies and private organizations, including BPOM, BNPB, LPDP, DKI Jakarta Government, and IPB University. Experienced across the entire software development lifecycle—from system architecture and database design to deployment, DevOps, and production support. Passionate about building scalable software, solving complex technical challenges, and delivering clean, maintainable code within Agile environments.",
   highlights: [
@@ -17,6 +16,8 @@ export const profile = {
     "Enterprise & Government Projects",
     "REST API Architecture",
     "Mobile Development",
+    "Go Data Pipelines",
+    "E-commerce Integrations",
     "DevOps & Linux Deployment",
     "PostgreSQL Performance Optimization",
     "Docker & CI/CD",
@@ -24,8 +25,8 @@ export const profile = {
     "Full Software Development Lifecycle",
   ],
   skills: {
-    Backend: ["Laravel", ".NET", "Node.js", "REST API", "Microservices"],
-    Frontend: ["React", "Next.js", "JavaScript", "TypeScript", "TailwindCSS"],
+    Backend: ["Laravel", ".NET", "Go", "Node.js", "REST API", "Microservices"],
+    Frontend: ["React", "Next.js", "Vue", "JavaScript", "TypeScript", "TailwindCSS"],
     Mobile: ["React Native", "Flutter"],
     Database: ["PostgreSQL", "MySQL", "SQL Server"],
     Infrastructure: ["Docker", "Linux", "Nginx", "Apache", "Git", "CI/CD"],
@@ -43,12 +44,13 @@ export const profile = {
       company: "Dinas Lingkungan Hidup Pemprov DKI Jakarta",
       period: "2025 – Present",
       bullets: [
-        "Designed and developed enterprise web applications using Laravel and .NET.",
+        "Designed and developed the SIDIA Adiwiyata portal (Laravel + Vue) and KEHATI biodiversity portal (.NET).",
         "Built RESTful APIs consumed by web and mobile applications.",
         "Improved application performance through database optimization and backend refactoring.",
         "Collaborated with government stakeholders to deliver large-scale digital transformation initiatives.",
         "Managed Linux production servers, Nginx configuration, deployment, and maintenance.",
       ],
+      stack: ["Laravel", "Vue", ".NET", "PostgreSQL", "REST API", "Linux", "Nginx"],
     },
     {
       title: "Full Stack Software Engineer",
@@ -61,6 +63,7 @@ export const profile = {
         "Optimized PostgreSQL and MySQL databases.",
         "Participated in Agile software development lifecycle.",
       ],
+      stack: ["Laravel", "React", "Next.js", "PostgreSQL", "MySQL", "REST API"],
     },
     {
       title: "Full Stack Software Engineer",
@@ -73,6 +76,7 @@ export const profile = {
         "Built reusable backend modules.",
         "Improved SQL query performance.",
       ],
+      stack: ["Laravel", "MySQL", "PHP", "Payment Gateway", "REST API"],
     },
   ],
 };

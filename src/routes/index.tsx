@@ -1,217 +1,504 @@
-import { createFileRoute,Link } from '@tanstack/react-router'
-import { ArrowRight, Mail, MapPin } from "lucide-react";
-import { BentoCard } from "../components/bento-card";
-import { profile } from "../data/profile";
-import { projectGroups } from "../data/projects";
+import { createFileRoute, Link } from "@tanstack/react-router";
+import {
+  ArrowRight,
+  ArrowUpRight,
+  Braces,
+  Check,
+  Database,
+  Layers,
+  Server,
+  Smartphone,
+  Sparkles,
+  Terminal,
+} from "lucide-react";
+import { profile } from "@/data/profile";
+import { clients, featuredProjects, projects } from "@/data/projects";
+import { ProjectCard } from "@/components/project-card";
 
-export const Route = createFileRoute('/')({
-    head: () => ({
-        meta: [
-        { title: "Ilham Wara Nugroho — Senior Full Stack Software Engineer" },
-        {
-            name: "description",
-            content:
-            "Senior Full Stack Engineer with 9+ years building enterprise & government systems for BPOM, BNPB, LPDP, and DKI Jakarta. Laravel · .NET · React · Next.js.",
-        },
-        { property: "og:title", content: "Ilham Wara Nugroho — Portfolio" },
-        {
-            property: "og:description",
-            content:
-            "Selected work & experience delivering enterprise-grade systems for Indonesian government and private organizations.",
-        },
-        { property: "og:url", content: "/" },
-        ],
-        links: [{ rel: "canonical", href: "/" }],
-    }),
+export const Route = createFileRoute("/")({
+  head: () => ({
+    meta: [
+      { title: "Ilham Wara Nugroho — Senior Full Stack Software Engineer" },
+      {
+        name: "description",
+        content:
+          "Senior full stack engineer with 9+ years delivering government and enterprise systems for BPOM, DLH DKI Jakarta, SMA Angkasa 2, and Perumda Tirta Jabar. Laravel, .NET, React, Go, PostgreSQL.",
+      },
+      { property: "og:title", content: "Ilham Wara Nugroho — Full Stack Engineer" },
+      {
+        property: "og:description",
+        content:
+          "Production systems for government and enterprise: Laravel, .NET, React, Next.js, PostgreSQL, and Linux infrastructure.",
+      },
+      { property: "og:url", content: "https://ilhamwara.web.id/" },
+      {
+        property: "og:image",
+        content: "https://ilhamwara.web.id/projects/sidia-jakarta-live.jpg",
+      },
+    ],
+    links: [{ rel: "canonical", href: "https://ilhamwara.web.id/" }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Person",
+          name: profile.name,
+          jobTitle: profile.role,
+          email: `mailto:${profile.email}`,
+          url: "https://ilhamwara.web.id",
+          address: { "@type": "PostalAddress", addressLocality: "Bekasi", addressCountry: "ID" },
+          sameAs: [profile.linkedin, profile.github],
+          knowsAbout: [
+            "Laravel",
+            ".NET",
+            "React",
+            "Next.js",
+            "PostgreSQL",
+            "REST API",
+            "React Native",
+            "Docker",
+          ],
+        }),
+      },
+    ],
+  }),
   component: HomePage,
-})
+});
+
+const capabilities = [
+  {
+    icon: Server,
+    title: "Backend architecture",
+    body: "Laravel and .NET services designed around clear domain boundaries, secure APIs, and data models that stay maintainable.",
+    items: ["Laravel", ".NET", "REST API", "Microservices"],
+  },
+  {
+    icon: Braces,
+    title: "Product frontends",
+    body: "React and Next.js interfaces that turn dense operational data into dashboards people can actually use.",
+    items: ["React", "Next.js", "TypeScript", "Tailwind"],
+  },
+  {
+    icon: Smartphone,
+    title: "Mobile delivery",
+    body: "React Native and Flutter apps connected to the same APIs, shipped to production and maintained.",
+    items: ["React Native", "Flutter", "Android", "API"],
+  },
+  {
+    icon: Database,
+    title: "Data & infrastructure",
+    body: "PostgreSQL performance work, Linux servers, Nginx, Docker, and CI/CD that keep services online.",
+    items: ["PostgreSQL", "Linux", "Nginx", "Docker"],
+  },
+];
+
+const process = [
+  {
+    n: "01",
+    title: "Understand the operation",
+    body: "Map the real workflow and constraints before choosing a stack or writing a schema.",
+  },
+  {
+    n: "02",
+    title: "Design the system",
+    body: "Data model, API contracts, roles, and failure modes — decided up front and documented.",
+  },
+  {
+    n: "03",
+    title: "Build in vertical slices",
+    body: "Every feature ships end to end: database, backend, interface, and verification.",
+  },
+  {
+    n: "04",
+    title: "Ship and stay responsible",
+    body: "Deploy, monitor, optimise queries, and keep production stable after launch.",
+  },
+];
 
 function HomePage() {
-    const featuredClients = ["SMA Angkasa 2","BPOM", "DLH DKI Jakarta", "BNPB", "LPDP", "Kemendikbud", "IPB"];
-    const coreTech = ["Golang","Laravel", ".NET", "React", "Next.js", "PostgreSQL", "Docker", "REST API", "TypeScript"];
+  const latest = projects[0];
 
-  return (<div className="mx-auto max-w-6xl px-6 py-12 sm:py-16">
-      {/* Bento grid */}
-      <section aria-label="Overview" className="grid grid-cols-1 gap-4 md:grid-cols-6 md:grid-rows-[auto_auto_auto]">
-        {/* Hero */}
-        <BentoCard
-          interactive={false}
-          className="md:col-span-4 md:row-span-2 flex flex-col justify-between min-h-[420px]"
-        >
-          <div>
-            <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-border bg-surface/60 px-3 py-1 text-xs text-muted-foreground">
-              <span className="h-1.5 w-1.5 rounded-full bg-primary animate-pulse" />
-              Available for select engagements
-            </div>
-            <h1 className="font-display text-4xl font-semibold leading-[1.05] text-foreground sm:text-5xl md:text-6xl">
-              {profile.name}
-            </h1>
-            <p className="mt-4 max-w-xl text-lg text-muted-foreground">
-              {profile.role} — designing and shipping enterprise-grade web and mobile systems for 9+ years.
-            </p>
-          </div>
-          <div className="mt-8 flex flex-wrap gap-3">
-            <Link
-              to="/projects"
-              className="group inline-flex items-center gap-2 rounded-lg bg-primary px-5 py-2.5 text-sm font-medium text-primary-foreground transition-all hover:bg-primary/90"
-            >
-              View Projects
-              <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
-            </Link>
-            <Link
-              to="/contact"
-              className="inline-flex items-center gap-2 rounded-lg border border-border bg-surface/60 px-5 py-2.5 text-sm font-medium text-foreground transition-colors hover:border-primary"
-            >
-              Get in touch
-            </Link>
-          </div>
-        </BentoCard>
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "ProfessionalService",
+            name: "Ilham Wara Nugroho — Full Stack Engineering",
+            description:
+              "Full stack engineering for government and enterprise web and mobile systems.",
+            areaServed: "Indonesia",
+            email: profile.email,
+          }),
+        }}
+      />
 
-        {/* Stat */}
-        <BentoCard className="md:col-span-2 flex flex-col justify-between">
-          <span className="text-xs uppercase tracking-widest text-muted-foreground">By the numbers</span>
-          <div className="space-y-4 mt-4">
-            <Stat n="9+" label="Years of experience" />
-            <div className="h-px bg-border" />
-            <Stat n="20+" label="Production systems" />
-            <div className="h-px bg-border" />
-            <Stat n="6+" label="Government clients" />
-          </div>
-        </BentoCard>
-
-        {/* Location / contact quick */}
-        <BentoCard className="md:col-span-2">
-          <span className="text-xs uppercase tracking-widest text-muted-foreground">Based in</span>
-          <div className="mt-3 flex items-center gap-2 text-foreground">
-            <MapPin className="h-4 w-4 text-primary" />
-            <span className="text-lg font-medium">Bekasi, Indonesia</span>
-          </div>
-          <div className="mt-6 space-y-2 text-sm">
-            <a
-              href={`mailto:${profile.email}`}
-              className="flex items-center gap-2 text-muted-foreground transition-colors hover:text-foreground"
-            >
-              <Mail className="h-4 w-4" /> {profile.email}
-            </a>
-            <a
-              href={profile.linkedin}
-              target="_blank"
-              rel="noreferrer"
-              className="flex items-center gap-2 text-muted-foreground transition-colors hover:text-foreground"
-            >
-              {/* <Linkedin className="h-4 w-4" /> LinkedIn */}
-            </a>
-            <a
-              href={profile.github}
-              target="_blank"
-              rel="noreferrer"
-              className="flex items-center gap-2 text-muted-foreground transition-colors hover:text-foreground"
-            >
-              {/* <Github className="h-4 w-4" /> github.com/ilhamwara */}
-            </a>
-          </div>
-        </BentoCard>
-
-        {/* Tech stack */}
-        <BentoCard className="md:col-span-4">
-          <span className="text-xs uppercase tracking-widest text-muted-foreground">Core stack</span>
-          <div className="mt-4 flex flex-wrap gap-2">
-            {coreTech.map((t) => (
-              <span
-                key={t}
-                className="rounded-full border border-border bg-surface/60 px-3 py-1.5 text-sm text-foreground"
-              >
-                {t}
+      {/* Hero */}
+      <section className="relative overflow-hidden border-b border-border">
+        <div className="pointer-events-none absolute inset-0 line-grid [mask-image:linear-gradient(to_bottom,black_10%,transparent_85%)]" />
+        <div className="relative mx-auto grid max-w-7xl items-center gap-12 px-5 pb-16 pt-14 sm:px-8 md:pb-24 md:pt-20 lg:grid-cols-[1.06fr_0.94fr]">
+          <div className="rise">
+            <p className="flex flex-wrap items-center gap-x-3 gap-y-2 text-sm">
+              <span className="inline-flex items-center gap-2 rounded-full border border-border bg-surface px-3 py-1.5 text-xs font-semibold text-foreground shadow-sm">
+                <span className="live-dot" />
+                Available for select engagements
               </span>
-            ))}
-          </div>
-        </BentoCard>
+              <span className="text-xs text-muted-foreground">
+                {profile.location}
+              </span>
+            </p>
 
-        {/* Featured clients */}
-        <BentoCard className="md:col-span-3">
-          <span className="text-xs uppercase tracking-widest text-muted-foreground">Trusted by</span>
-          <div className="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-3">
-            {featuredClients.map((c) => (
-              <div
-                key={c}
-                className="flex items-center justify-center rounded-md border border-border bg-surface/40 px-3 py-4 text-center text-sm font-medium text-foreground"
-              >
-                {c}
+            <h1 className="mt-7 font-display text-[2.65rem] font-bold leading-[1.02] tracking-[-0.04em] sm:text-6xl lg:text-[4.4rem]">
+              Software that
+              <br />
+              public services
+              <br />
+              <span className="relative inline-block">
+                rely on.
+                <span className="absolute inset-x-0 bottom-1 -z-10 h-3 bg-lime/80 sm:h-4" />
+              </span>
+            </h1>
+
+            <p className="mt-6 max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg">
+              I'm <strong className="font-semibold text-foreground">{profile.name}</strong>,
+              a senior full stack engineer with {""}
+              <strong className="font-semibold text-foreground">9+ years</strong> building
+              enterprise-grade web and mobile systems for Indonesian government
+              agencies and private organisations.
+            </p>
+
+            <div className="mt-8 flex flex-wrap items-center gap-3">
+              <Link to="/projects" className="btn btn-primary group">
+                Explore my work
+                <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
+              </Link>
+              <Link to="/contact" className="btn btn-outline">
+                Start a project
+                <ArrowUpRight className="h-4 w-4" />
+              </Link>
+            </div>
+
+            <dl className="mt-10 grid max-w-lg grid-cols-3 gap-4 border-t border-border pt-6">
+              {[
+                ["9+", "Years shipping"],
+                ["20+", "Production systems"],
+                ["6+", "Government clients"],
+              ].map(([n, label]) => (
+                <div key={label}>
+                  <dt className="font-display text-2xl font-bold text-foreground sm:text-3xl">
+                    {n}
+                  </dt>
+                  <dd className="mt-1 text-[11px] leading-tight text-muted-foreground sm:text-xs">
+                    {label}
+                  </dd>
+                </div>
+              ))}
+            </dl>
+          </div>
+
+          {/* Visual */}
+          <div className="relative mx-auto w-full max-w-xl lg:max-w-none">
+            <div className="absolute -inset-6 -z-10 rounded-[2rem] bg-primary/10 blur-2xl" />
+            <div className="relative rounded-2xl border border-border bg-surface p-2.5 shadow-[0_40px_90px_-40px_rgba(15,23,42,0.5)]">
+              <div className="overflow-hidden rounded-xl border border-black/10 bg-ink">
+                <img
+                  src={latest.cover}
+                  alt={`${latest.name} application screenshot`}
+                  width={1200}
+                  height={760}
+                  className="w-full"
+                  fetchPriority="high"
+                />
               </div>
-            ))}
-          </div>
-        </BentoCard>
+              <div className="flex items-center justify-between gap-3 px-2 pb-1 pt-3">
+                <div className="min-w-0">
+                  <p className="text-[10px] font-bold uppercase tracking-widest text-primary">
+                    Currently building
+                  </p>
+                  <p className="truncate font-display text-sm font-semibold">
+                    {latest.name} · {latest.client.split(" — ")[0]}
+                  </p>
+                </div>
+                <Link
+                  to="/projects/$slug"
+                  params={{ slug: latest.slug }}
+                  aria-label={`View ${latest.name}`}
+                  className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-ink text-background"
+                >
+                  <ArrowUpRight className="h-4 w-4" />
+                </Link>
+              </div>
+            </div>
 
-        {/* Latest role */}
-        <BentoCard className="md:col-span-3">
-          <span className="text-xs uppercase tracking-widest text-muted-foreground">Currently</span>
-          <h2 className="mt-3 font-display text-xl font-semibold text-foreground">
-            Full Stack Software Engineer
-          </h2>
-          <p className="mt-1 text-sm text-primary">Dinas Lingkungan Hidup Pemprov DKI Jakarta</p>
-          <p className="mt-4 text-sm text-muted-foreground">
-            Building enterprise Laravel & .NET systems, RESTful APIs, and production-grade Linux infrastructure for the Jakarta government.
-          </p>
-          <Link
-            to="/experience"
-            className="mt-6 inline-flex items-center gap-1.5 text-sm font-medium text-primary transition-colors hover:text-foreground"
-          >
-            Full experience <ArrowRight className="h-3.5 w-3.5" />
-          </Link>
-        </BentoCard>
+            <div className="absolute -bottom-6 -left-3 hidden items-center gap-2 rounded-xl border border-border bg-surface px-3.5 py-3 shadow-lg sm:flex">
+              <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-lime text-ink">
+                <Check className="h-4 w-4" strokeWidth={3} />
+              </span>
+              <div>
+                <p className="text-[11px] font-bold">Production ready</p>
+                <p className="text-[10px] text-muted-foreground">Shipped, deployed, supported</p>
+              </div>
+            </div>
+
+            <div className="absolute -right-2 top-8 hidden rotate-2 items-center gap-2 rounded-xl border border-border bg-surface px-3 py-2.5 shadow-lg lg:flex">
+              <Terminal className="h-4 w-4 text-primary" />
+              <span className="font-mono text-[11px] font-medium">laravel · .net · go · react</span>
+            </div>
+          </div>
+        </div>
       </section>
 
-      {/* Featured projects */}
-      <section aria-labelledby="featured-projects" className="mt-16">
-        <div className="mb-6 flex items-end justify-between">
+      {/* Clients marquee */}
+      <section aria-label="Clients" className="border-b border-border bg-surface/60 py-5">
+        <div className="mx-auto flex max-w-7xl items-center gap-6 px-5 sm:px-8">
+          <span className="hidden shrink-0 text-[11px] font-bold uppercase tracking-[0.16em] text-muted-foreground sm:block">
+            Trusted by
+          </span>
+          <div className="relative flex-1 overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_6%,black_94%,transparent)]">
+            <div className="marquee-track items-center gap-10">
+              {[...clients, ...clients].map((c, i) => (
+                <span
+                  key={`${c}-${i}`}
+                  className="whitespace-nowrap font-display text-sm font-semibold text-muted-foreground/80"
+                >
+                  {c}
+                </span>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Selected work */}
+      <section aria-labelledby="work" className="mx-auto max-w-7xl px-5 py-16 sm:px-8 md:py-24">
+        <div className="flex flex-wrap items-end justify-between gap-4">
           <div>
-            <span className="text-xs uppercase tracking-widest text-muted-foreground">Selected work</span>
-            <h2 id="featured-projects" className="mt-2 font-display text-3xl font-semibold text-foreground">
-              Featured projects
+            <p className="eyebrow">
+              <span className="h-px w-6 bg-primary" /> Selected work
+            </p>
+            <h2 id="work" className="mt-3 font-display text-3xl font-bold sm:text-4xl">
+              Systems in production.
             </h2>
+            <p className="mt-3 max-w-xl text-sm leading-relaxed text-muted-foreground sm:text-base">
+              {projects.length} applications across environmental monitoring,
+              education, public health, and commerce — each with its own
+              constraints and users.
+            </p>
           </div>
           <Link
             to="/projects"
-            className="hidden text-sm text-primary transition-colors hover:text-foreground sm:inline-flex sm:items-center sm:gap-1.5"
+            className="group inline-flex items-center gap-2 text-sm font-semibold text-foreground"
           >
-            All projects <ArrowRight className="h-3.5 w-3.5" />
+            All projects
+            <span className="flex h-8 w-8 items-center justify-center rounded-full border border-border bg-surface transition-colors group-hover:border-foreground">
+              <ArrowUpRight className="h-4 w-4" />
+            </span>
           </Link>
         </div>
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-          {projectGroups.map((p) => (
-            <Link
-              key={p.slug}
-              to="/projects/$slug"
-              params={{ slug: p.slug }}
-              className="bento-card bento-card-hover block"
-            >
-              <div className="flex items-start justify-between">
-                <div>
-                  <h3 className="font-display text-lg font-semibold text-foreground">{p.client}</h3>
-                  {p.period && <p className="mt-1 text-xs text-muted-foreground">{p.period}</p>}
-                </div>
-                <ArrowRight className="h-4 w-4 text-muted-foreground" />
-              </div>
-              <p className="mt-3 text-sm text-muted-foreground line-clamp-2">{p.summary}</p>
-              <div className="mt-4 flex flex-wrap gap-1.5">
-                {p.techStack.slice(0, 4).map((t) => (
-                  <span key={t} className="rounded-md border border-border px-2 py-0.5 text-xs text-muted-foreground">
-                    {t}
-                  </span>
-                ))}
-              </div>
-            </Link>
+
+        <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          {featuredProjects.map((p, i) => (
+            <ProjectCard key={p.slug} project={p} priority={i < 3} />
           ))}
         </div>
       </section>
-    </div>);
-}
 
-function Stat({ n, label }: { n: string; label: string }) {
-  return (
-    <div>
-      <div className="font-display text-3xl font-semibold text-foreground">{n}</div>
-      <div className="text-xs text-muted-foreground">{label}</div>
-    </div>
+      {/* Capabilities */}
+      <section aria-labelledby="capabilities" className="mx-auto max-w-7xl px-5 sm:px-8">
+        <div className="relative overflow-hidden rounded-3xl bg-dark px-6 py-14 text-dark-foreground sm:px-10 md:px-14 md:py-16">
+          <div className="pointer-events-none absolute inset-0 dot-grid opacity-[0.16]" />
+          <div className="pointer-events-none absolute -right-24 -top-24 h-72 w-72 rounded-full bg-primary/30 blur-3xl" />
+          <div className="pointer-events-none absolute -bottom-32 left-1/3 h-72 w-72 rounded-full bg-lime/10 blur-3xl" />
+
+          <div className="relative grid gap-10 lg:grid-cols-[0.85fr_1.15fr]">
+            <div>
+              <p className="inline-flex items-center gap-2 text-[11px] font-bold uppercase tracking-[0.16em] text-lime">
+                <Sparkles className="h-3.5 w-3.5" /> What I do
+              </p>
+              <h2 id="capabilities" className="mt-4 font-display text-3xl font-bold sm:text-4xl">
+                One engineer,
+                <br />
+                the whole stack.
+              </h2>
+              <p className="mt-4 max-w-md text-sm leading-relaxed text-dark-foreground/65">
+                From schema design to the last deploy, I stay close to the
+                system. That's how the API, the interface, and the database
+                stay consistent.
+              </p>
+              <Link
+                to="/about"
+                className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-lime"
+              >
+                More about how I work <ArrowRight className="h-4 w-4" />
+              </Link>
+            </div>
+
+            <div className="grid gap-px overflow-hidden rounded-2xl border border-white/10 bg-white/10 sm:grid-cols-2">
+              {capabilities.map((c) => (
+                <div key={c.title} className="bg-dark p-6 transition-colors hover:bg-white/[0.04]">
+                  <c.icon className="h-5 w-5 text-lime" />
+                  <h3 className="mt-4 font-display text-base font-semibold">{c.title}</h3>
+                  <p className="mt-2 text-[13px] leading-relaxed text-dark-foreground/60">
+                    {c.body}
+                  </p>
+                  <div className="mt-4 flex flex-wrap gap-1.5">
+                    {c.items.map((i) => (
+                      <span
+                        key={i}
+                        className="rounded border border-white/10 px-1.5 py-0.5 text-[10px] text-dark-foreground/55"
+                      >
+                        {i}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Process */}
+      <section aria-labelledby="process" className="mx-auto max-w-7xl px-5 py-16 sm:px-8 md:py-24">
+        <div className="grid gap-12 lg:grid-cols-[0.8fr_1.2fr]">
+          <div>
+            <p className="eyebrow">
+              <span className="h-px w-6 bg-primary" /> How it runs
+            </p>
+            <h2 id="process" className="mt-3 font-display text-3xl font-bold sm:text-4xl">
+              Boring process.
+              <br />
+              Reliable outcome.
+            </h2>
+            <p className="mt-4 max-w-sm text-sm leading-relaxed text-muted-foreground">
+              I work best with teams that care about the operational detail.
+              Clear stages, no surprise handoffs, and production treated as part
+              of the job.
+            </p>
+            <Link to="/experience" className="btn btn-outline mt-6">
+              See the track record <ArrowUpRight className="h-4 w-4" />
+            </Link>
+          </div>
+
+          <ol className="grid gap-4 sm:grid-cols-2">
+            {process.map((s) => (
+              <li key={s.n} className="card p-6">
+                <span className="font-display text-xs font-bold text-primary">{s.n}</span>
+                <h3 className="mt-3 font-display text-base font-semibold">{s.title}</h3>
+                <p className="mt-2 text-[13px] leading-relaxed text-muted-foreground">
+                  {s.body}
+                </p>
+              </li>
+            ))}
+          </ol>
+        </div>
+      </section>
+
+      {/* Current role + stack */}
+      <section className="mx-auto max-w-7xl px-5 sm:px-8">
+        <div className="grid gap-5 lg:grid-cols-[1.2fr_0.8fr]">
+          <div className="card flex flex-col justify-between gap-8 p-7 sm:p-9">
+            <div className="flex items-start justify-between gap-4">
+              <div>
+                <p className="eyebrow">Currently</p>
+                <h2 className="mt-3 font-display text-xl font-semibold sm:text-2xl">
+                  Full Stack Software Engineer
+                </h2>
+                <p className="mt-1 text-sm font-medium text-primary">
+                  Dinas Lingkungan Hidup — Pemprov DKI Jakarta
+                </p>
+              </div>
+              <span className="hidden rounded-lg bg-lime px-2.5 py-1 text-[11px] font-bold text-ink sm:block">
+                2025 — Present
+              </span>
+            </div>
+            <p className="max-w-xl text-sm leading-relaxed text-muted-foreground">
+              Building enterprise Laravel and .NET systems, REST APIs, and
+              production Linux infrastructure for the Jakarta provincial
+              government's environmental programs.
+            </p>
+            <div className="flex flex-wrap items-center gap-4">
+              <Link to="/experience" className="btn btn-dark">
+                Full experience <ArrowRight className="h-4 w-4" />
+              </Link>
+              <div className="flex items-center gap-2 text-xs text-muted-foreground">
+                <Layers className="h-4 w-4 text-primary" />
+                {profile.experience.length} roles · {profile.achievements.length} delivery highlights
+              </div>
+            </div>
+          </div>
+
+          <div className="card p-7 sm:p-9">
+            <p className="eyebrow">Core stack</p>
+            <div className="mt-4 flex flex-wrap gap-2">
+              {[
+                "Golang",
+                "Laravel",
+                ".NET",
+                "React",
+                "Next.js",
+                "Vue",
+                "React Native",
+                "Flutter",
+                "PostgreSQL",
+                "Docker",
+                "REST API",
+                "TypeScript",
+                "Linux",
+                "CI/CD",
+              ].map((t) => (
+                <span key={t} className="tag text-xs">
+                  {t}
+                </span>
+              ))}
+            </div>
+            <p className="mt-6 border-t border-border pt-5 text-xs leading-relaxed text-muted-foreground">
+              Also comfortable with MySQL, SQL Server, Yii2, CodeIgniter,
+              Firebase, Supabase, WordPress, Nginx, Socket.IO, and payment
+              gateway integrations.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="mx-auto max-w-7xl px-5 py-16 sm:px-8 md:py-24">
+        <div className="relative overflow-hidden rounded-3xl bg-primary px-6 py-14 text-primary-foreground sm:px-10 md:px-14 md:py-16">
+          <div className="pointer-events-none absolute inset-0 dot-grid opacity-20" />
+          <div className="pointer-events-none absolute -right-16 -top-16 h-64 w-64 rounded-full border-[32px] border-white/10" />
+          <div className="relative flex flex-col items-start justify-between gap-8 md:flex-row md:items-end">
+            <div>
+              <p className="text-[11px] font-bold uppercase tracking-[0.16em] text-white/70">
+                Let's talk
+              </p>
+              <h2 className="mt-3 max-w-2xl font-display text-3xl font-bold sm:text-4xl md:text-5xl">
+                Got a system that needs to ship?
+              </h2>
+              <p className="mt-4 max-w-xl text-sm leading-relaxed text-white/75 sm:text-base">
+                I take on a small number of engagements at a time. Tell me what
+                you're building, the constraints, and what "done" looks like.
+              </p>
+            </div>
+            <div className="flex shrink-0 flex-wrap gap-3">
+              <Link
+                to="/contact"
+                className="btn bg-white text-ink hover:bg-white/90"
+              >
+                Start a conversation <ArrowUpRight className="h-4 w-4" />
+              </Link>
+              <a
+                href={`mailto:${profile.email}`}
+                className="btn border border-white/30 text-white hover:bg-white/10"
+              >
+                {profile.email}
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
   );
 }
