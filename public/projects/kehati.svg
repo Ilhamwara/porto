@@ -1,0 +1,160 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-label="KEHATI interface preview">
+  
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0B1224"/>
+      <stop offset="1" stop-color="#070B14"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#12B981"/>
+      <stop offset="1" stop-color="rgba(18, 185, 129, 0.55)"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#141E33"/>
+      <stop offset="1" stop-color="#0F1728"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.15" cy="0" r="0.8">
+      <stop offset="0" stop-color="rgba(18, 185, 129, 0.35)"/>
+      <stop offset="1" stop-color="rgba(18, 185, 129, 0)"/>
+    </radialGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="rgba(255,255,255,0.035)" stroke-width="1"/>
+    </pattern>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#000" flood-opacity="0.45"/>
+    </filter>
+    <clipPath id="windowClip">
+      <rect x="41" y="89" width="1118" height="630" rx="19"/>
+    </clipPath>
+  </defs>
+  <rect width="1200" height="760" fill="url(#bg)"/>
+  <rect width="1200" height="760" fill="url(#glow)"/>
+  <rect width="1200" height="760" fill="url(#grid)"/>
+  
+  <g filter="url(#shadow)">
+    <rect x="40" y="40" width="1120" height="680" rx="20" fill="#0C1424" stroke="rgba(255,255,255,0.10)"/>
+  </g>
+  <rect x="40" y="40" width="1120" height="48" rx="20" fill="#0F192C"/>
+  <rect x="40" y="70" width="1120" height="18" fill="#0F192C"/>
+  <line x1="40" y1="88" x2="1160" y2="88" stroke="rgba(255,255,255,0.07)"/>
+  <circle cx="68" cy="64" r="5" fill="#FF5F57"/>
+  <circle cx="86" cy="64" r="5" fill="#FEBC2E"/>
+  <circle cx="104" cy="64" r="5" fill="#28C840"/>
+  <rect x="132" y="53" width="470" height="24" rx="12" fill="#0A1220" stroke="rgba(255,255,255,0.06)"/>
+  <path d="M150 65v-4a4 4 0 0 1 8 0v4M149 65h10v7h-10z" fill="none" stroke="rgba(18, 185, 129, 0.9)" stroke-width="1.4"/>
+  <text x="168" y="69" fill="#93A2BA" font-size="11" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">kehati.go.id</text>
+  <rect x="1092" y="55" width="30" height="20" rx="6" fill="rgba(18, 185, 129, 0.16)"/>
+  <text x="1107" y="69" fill="#12B981" font-size="9" text-anchor="middle" font-family="Manrope, ui-sans-serif, system-ui, sans-serif" font-weight="700">KE</text>
+  <g clip-path="url(#windowClip)">
+    
+  <rect x="40" y="88" width="196" height="632" fill="#0B1424"/>
+  <line x1="236" y1="88" x2="236" y2="720" stroke="rgba(255,255,255,0.07)"/>
+  <rect x="64" y="112" width="34" height="34" rx="10" fill="url(#accent)"/>
+  <text x="81" y="134" fill="#fff" font-size="12" font-weight="800" text-anchor="middle" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">KE</text>
+  <text x="108" y="126" fill="#EEF3FB" font-size="13" font-weight="800" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">KEHATI</text>
+  <text x="108" y="141" fill="#728199" font-size="9" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">Workspace</text>
+  <text x="64" y="172" fill="#5B6980" font-size="9" letter-spacing="1.4" font-family="Manrope, ui-sans-serif, system-ui, sans-serif" font-weight="700">MENU</text>
+  
+    <g>
+      <rect x="60" y="184" width="156" height="32" rx="8" fill="rgba(18, 185, 129, 0.14)"/>
+      <circle cx="76" cy="200" r="3.5" fill="#12B981"/>
+      <text x="90" y="204" fill="#EAF0FB" font-size="12" font-family="Manrope, ui-sans-serif, system-ui, sans-serif" font-weight="700">Overview</text>
+    </g>
+    <g>
+      
+      <circle cx="76" cy="244" r="3.5" fill="#5B6980"/>
+      <text x="90" y="248" fill="#8492A9" font-size="12" font-family="Manrope, ui-sans-serif, system-ui, sans-serif" font-weight="500">Flora &amp; Fauna</text>
+    </g>
+    <g>
+      
+      <circle cx="76" cy="288" r="3.5" fill="#5B6980"/>
+      <text x="90" y="292" fill="#8492A9" font-size="12" font-family="Manrope, ui-sans-serif, system-ui, sans-serif" font-weight="500">Peta</text>
+    </g>
+    <g>
+      
+      <circle cx="76" cy="332" r="3.5" fill="#5B6980"/>
+      <text x="90" y="336" fill="#8492A9" font-size="12" font-family="Manrope, ui-sans-serif, system-ui, sans-serif" font-weight="500">Admin</text>
+    </g>
+  <rect x="56" y="660" width="164" height="44" rx="10" fill="#101C30" stroke="rgba(255,255,255,0.06)"/>
+  <circle cx="76" cy="682" r="11" fill="rgba(18, 185, 129, 0.2)"/>
+  <text x="76" y="686" fill="#12B981" font-size="9" font-weight="700" text-anchor="middle" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">IW</text>
+  <text x="94" y="679" fill="#D8E2F2" font-size="10" font-weight="700" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">Ilham Wara</text>
+  <text x="94" y="692" fill="#6C7B92" font-size="8" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">Administrator</text>
+    
+    
+  <text x="268" y="132" fill="#F2F6FD" font-size="21" font-weight="800" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">Monitoring map</text>
+  <text x="268" y="152" fill="#7C8AA1" font-size="11" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">Sebaran titik pemantauan lingkungan</text>
+  <rect x="878" y="112" width="180" height="30" rx="8" fill="#0E192B" stroke="rgba(255,255,255,0.07)"/>
+  <circle cx="894" cy="127" r="4" fill="none" stroke="#6C7B92" stroke-width="1.4"/>
+  <line x1="897" y1="130" x2="901" y2="134" stroke="#6C7B92" stroke-width="1.4"/>
+  <text x="910" y="131" fill="#5F6E85" font-size="10" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">Search anything…</text>
+  <rect x="1068" y="112" width="64" height="30" rx="8" fill="#12B981"/>
+  <text x="1100" y="131" fill="#07101F" font-size="10" font-weight="800" text-anchor="middle" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">Export</text>
+    <rect x="268" y="176" width="566" height="512" rx="12" fill="#0D1728" stroke="rgba(255,255,255,0.07)"/>
+    <path d="M300 300 C360 250 430 270 470 230 C520 180 620 210 660 260 C710 320 690 380 740 430 C790 480 780 560 720 620 C660 670 560 650 500 610 C430 560 360 600 320 540 C280 480 250 350 300 300 Z" fill="#12233B" stroke="rgba(18, 185, 129, 0.25)"/>
+    <path d="M470 230 C520 300 470 360 520 420 C560 470 640 460 700 520" fill="none" stroke="rgba(18, 185, 129, 0.18)" stroke-width="1.5"/>
+    <path d="M350 520 C420 480 470 520 540 560" fill="none" stroke="rgba(255,255,255,0.08)"/>
+    
+      <circle cx="430" cy="380" r="12" fill="rgba(18, 185, 129, 0.18)"/>
+      <circle cx="430" cy="380" r="3.5" fill="#12B981"/>
+      <circle cx="430" cy="380" r="16" fill="none" stroke="rgba(18, 185, 129, 0.2)"/>
+      <circle cx="560" cy="330" r="12" fill="rgba(18, 185, 129, 0.18)"/>
+      <circle cx="560" cy="330" r="3.5" fill="#12B981"/>
+      <circle cx="560" cy="330" r="16" fill="none" stroke="rgba(18, 185, 129, 0.2)"/>
+      <circle cx="700" cy="420" r="12" fill="rgba(18, 185, 129, 0.18)"/>
+      <circle cx="700" cy="420" r="5" fill="#12B981"/>
+      <circle cx="700" cy="420" r="22" fill="none" stroke="rgba(18, 185, 129, 0.2)"/>
+      <circle cx="820" cy="350" r="12" fill="rgba(18, 185, 129, 0.18)"/>
+      <circle cx="820" cy="350" r="3.5" fill="#12B981"/>
+      <circle cx="820" cy="350" r="16" fill="none" stroke="rgba(18, 185, 129, 0.2)"/>
+      <circle cx="900" cy="470" r="12" fill="rgba(18, 185, 129, 0.18)"/>
+      <circle cx="900" cy="470" r="3.5" fill="#12B981"/>
+      <circle cx="900" cy="470" r="16" fill="none" stroke="rgba(18, 185, 129, 0.2)"/>
+      <circle cx="520" cy="500" r="12" fill="rgba(18, 185, 129, 0.18)"/>
+      <circle cx="520" cy="500" r="3.5" fill="#12B981"/>
+      <circle cx="520" cy="500" r="16" fill="none" stroke="rgba(18, 185, 129, 0.2)"/>
+    <rect x="300" y="196" width="200" height="34" rx="8" fill="#0A1322" stroke="rgba(255,255,255,0.07)"/>
+    <text x="316" y="218" fill="#7C8AA1" font-size="9" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">Cari wilayah atau titik…</text>
+    <rect x="760" y="196" width="54" height="34" rx="8" fill="#0A1322" stroke="rgba(255,255,255,0.07)"/>
+    <text x="787" y="218" fill="#12B981" font-size="9" text-anchor="middle" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">Filter</text>
+    <rect x="854" y="176" width="278" height="168" rx="12" fill="url(#panel)" stroke="rgba(255,255,255,0.07)"/>
+    <text x="872" y="202" fill="#E7EEF9" font-size="12" font-weight="700" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">Monitoring summary</text>
+    <text x="872" y="240" fill="#F2F6FD" font-size="30" font-weight="800" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">186</text>
+    <text x="872" y="258" fill="#7C8AA1" font-size="9" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">active monitoring points</text>
+    <rect x="872" y="280" width="112" height="44" rx="8" fill="#0C1626"/>
+    <text x="886" y="298" fill="#6C7B92" font-size="8" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">Normal</text>
+    <text x="886" y="314" fill="#12B981" font-size="13" font-weight="800" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">171</text>
+    <rect x="994" y="280" width="120" height="44" rx="8" fill="#0C1626"/>
+    <text x="1008" y="298" fill="#6C7B92" font-size="8" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">Needs review</text>
+    <text x="1008" y="314" fill="#F5B301" font-size="13" font-weight="800" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">15</text>
+    <rect x="854" y="360" width="278" height="328" rx="12" fill="url(#panel)" stroke="rgba(255,255,255,0.07)"/>
+    <text x="872" y="386" fill="#E7EEF9" font-size="12" font-weight="700" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">Latest observations</text>
+    
+        <circle cx="884" cy="410" r="4" fill="#12B981"/>
+        <text x="898" y="414" fill="#D3DEED" font-size="10" font-weight="600" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">Jakarta Selatan</text>
+        <text x="898" y="428" fill="#6C7B92" font-size="8" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">Tebet</text>
+        <text x="1112" y="418" fill="#12B981" font-size="8" text-anchor="end" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">Normal</text>
+        <line x1="872" y1="440" x2="1114" y2="440" stroke="rgba(255,255,255,0.05)"/>
+        <circle cx="884" cy="462" r="4" fill="#F5B301"/>
+        <text x="898" y="466" fill="#D3DEED" font-size="10" font-weight="600" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">Jakarta Pusat</text>
+        <text x="898" y="480" fill="#6C7B92" font-size="8" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">Menteng</text>
+        <text x="1112" y="470" fill="#F5B301" font-size="8" text-anchor="end" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">Review</text>
+        <line x1="872" y1="492" x2="1114" y2="492" stroke="rgba(255,255,255,0.05)"/>
+        <circle cx="884" cy="514" r="4" fill="#12B981"/>
+        <text x="898" y="518" fill="#D3DEED" font-size="10" font-weight="600" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">Jakarta Barat</text>
+        <text x="898" y="532" fill="#6C7B92" font-size="8" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">Kebon Jeruk</text>
+        <text x="1112" y="522" fill="#12B981" font-size="8" text-anchor="end" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">Normal</text>
+        <line x1="872" y1="544" x2="1114" y2="544" stroke="rgba(255,255,255,0.05)"/>
+        <circle cx="884" cy="566" r="4" fill="#12B981"/>
+        <text x="898" y="570" fill="#D3DEED" font-size="10" font-weight="600" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">Jakarta Timur</text>
+        <text x="898" y="584" fill="#6C7B92" font-size="8" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">Cakung</text>
+        <text x="1112" y="574" fill="#12B981" font-size="8" text-anchor="end" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">Normal</text>
+        <line x1="872" y1="596" x2="1114" y2="596" stroke="rgba(255,255,255,0.05)"/>
+        <circle cx="884" cy="618" r="4" fill="#F5B301"/>
+        <text x="898" y="622" fill="#D3DEED" font-size="10" font-weight="600" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">Jakarta Utara</text>
+        <text x="898" y="636" fill="#6C7B92" font-size="8" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">Koja</text>
+        <text x="1112" y="626" fill="#F5B301" font-size="8" text-anchor="end" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">Review</text>
+        <line x1="872" y1="648" x2="1114" y2="648" stroke="rgba(255,255,255,0.05)"/>
+  </g>
+  <text x="1140" y="739" fill="#43516A" font-size="8" text-anchor="end" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">Illustrative UI preview · Dinas Lingkungan Hidup DKI Jakarta</text>
+</svg>

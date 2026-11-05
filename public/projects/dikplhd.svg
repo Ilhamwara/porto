@@ -1,0 +1,153 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-label="SLHD interface preview">
+  
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0B1224"/>
+      <stop offset="1" stop-color="#070B14"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0EA5E9"/>
+      <stop offset="1" stop-color="rgba(14, 165, 233, 0.55)"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#141E33"/>
+      <stop offset="1" stop-color="#0F1728"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.15" cy="0" r="0.8">
+      <stop offset="0" stop-color="rgba(14, 165, 233, 0.35)"/>
+      <stop offset="1" stop-color="rgba(14, 165, 233, 0)"/>
+    </radialGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="rgba(255,255,255,0.035)" stroke-width="1"/>
+    </pattern>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#000" flood-opacity="0.45"/>
+    </filter>
+    <clipPath id="windowClip">
+      <rect x="41" y="89" width="1118" height="630" rx="19"/>
+    </clipPath>
+  </defs>
+  <rect width="1200" height="760" fill="url(#bg)"/>
+  <rect width="1200" height="760" fill="url(#glow)"/>
+  <rect width="1200" height="760" fill="url(#grid)"/>
+  
+  <g filter="url(#shadow)">
+    <rect x="40" y="40" width="1120" height="680" rx="20" fill="#0C1424" stroke="rgba(255,255,255,0.10)"/>
+  </g>
+  <rect x="40" y="40" width="1120" height="48" rx="20" fill="#0F192C"/>
+  <rect x="40" y="70" width="1120" height="18" fill="#0F192C"/>
+  <line x1="40" y1="88" x2="1160" y2="88" stroke="rgba(255,255,255,0.07)"/>
+  <circle cx="68" cy="64" r="5" fill="#FF5F57"/>
+  <circle cx="86" cy="64" r="5" fill="#FEBC2E"/>
+  <circle cx="104" cy="64" r="5" fill="#28C840"/>
+  <rect x="132" y="53" width="470" height="24" rx="12" fill="#0A1220" stroke="rgba(255,255,255,0.06)"/>
+  <path d="M150 65v-4a4 4 0 0 1 8 0v4M149 65h10v7h-10z" fill="none" stroke="rgba(14, 165, 233, 0.9)" stroke-width="1.4"/>
+  <text x="168" y="69" fill="#93A2BA" font-size="11" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">dikplhd.go.id</text>
+  <rect x="1092" y="55" width="30" height="20" rx="6" fill="rgba(14, 165, 233, 0.16)"/>
+  <text x="1107" y="69" fill="#0EA5E9" font-size="9" text-anchor="middle" font-family="Manrope, ui-sans-serif, system-ui, sans-serif" font-weight="700">SL</text>
+  <g clip-path="url(#windowClip)">
+    
+  <rect x="40" y="88" width="196" height="632" fill="#0B1424"/>
+  <line x1="236" y1="88" x2="236" y2="720" stroke="rgba(255,255,255,0.07)"/>
+  <rect x="64" y="112" width="34" height="34" rx="10" fill="url(#accent)"/>
+  <text x="81" y="134" fill="#fff" font-size="12" font-weight="800" text-anchor="middle" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">SL</text>
+  <text x="108" y="126" fill="#EEF3FB" font-size="13" font-weight="800" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">SLHD</text>
+  <text x="108" y="141" fill="#728199" font-size="9" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">Workspace</text>
+  <text x="64" y="172" fill="#5B6980" font-size="9" letter-spacing="1.4" font-family="Manrope, ui-sans-serif, system-ui, sans-serif" font-weight="700">MENU</text>
+  
+    <g>
+      <rect x="60" y="184" width="156" height="32" rx="8" fill="rgba(14, 165, 233, 0.14)"/>
+      <circle cx="76" cy="200" r="3.5" fill="#0EA5E9"/>
+      <text x="90" y="204" fill="#EAF0FB" font-size="12" font-family="Manrope, ui-sans-serif, system-ui, sans-serif" font-weight="700">Dataset</text>
+    </g>
+    <g>
+      
+      <circle cx="76" cy="244" r="3.5" fill="#5B6980"/>
+      <text x="90" y="248" fill="#8492A9" font-size="12" font-family="Manrope, ui-sans-serif, system-ui, sans-serif" font-weight="500">Publikasi</text>
+    </g>
+    <g>
+      
+      <circle cx="76" cy="288" r="3.5" fill="#5B6980"/>
+      <text x="90" y="292" fill="#8492A9" font-size="12" font-family="Manrope, ui-sans-serif, system-ui, sans-serif" font-weight="500">Dashboard</text>
+    </g>
+    <g>
+      
+      <circle cx="76" cy="332" r="3.5" fill="#5B6980"/>
+      <text x="90" y="336" fill="#8492A9" font-size="12" font-family="Manrope, ui-sans-serif, system-ui, sans-serif" font-weight="500">Master</text>
+    </g>
+  <rect x="56" y="660" width="164" height="44" rx="10" fill="#101C30" stroke="rgba(255,255,255,0.06)"/>
+  <circle cx="76" cy="682" r="11" fill="rgba(14, 165, 233, 0.2)"/>
+  <text x="76" y="686" fill="#0EA5E9" font-size="9" font-weight="700" text-anchor="middle" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">IW</text>
+  <text x="94" y="679" fill="#D8E2F2" font-size="10" font-weight="700" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">Ilham Wara</text>
+  <text x="94" y="692" fill="#6C7B92" font-size="8" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">Administrator</text>
+    
+    
+  <text x="268" y="132" fill="#F2F6FD" font-size="21" font-weight="800" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">Portal informasi</text>
+  <text x="268" y="152" fill="#7C8AA1" font-size="11" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">Informasi, layanan, dan pengumuman</text>
+  <rect x="878" y="112" width="180" height="30" rx="8" fill="#0E192B" stroke="rgba(255,255,255,0.07)"/>
+  <circle cx="894" cy="127" r="4" fill="none" stroke="#6C7B92" stroke-width="1.4"/>
+  <line x1="897" y1="130" x2="901" y2="134" stroke="#6C7B92" stroke-width="1.4"/>
+  <text x="910" y="131" fill="#5F6E85" font-size="10" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">Search anything…</text>
+  <rect x="1068" y="112" width="64" height="30" rx="8" fill="#0EA5E9"/>
+  <text x="1100" y="131" fill="#07101F" font-size="10" font-weight="800" text-anchor="middle" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">Export</text>
+    <rect x="268" y="176" width="864" height="144" rx="12" fill="rgba(14, 165, 233, 0.09)" stroke="rgba(14, 165, 233, 0.24)"/>
+    <text x="292" y="208" fill="#0EA5E9" font-size="8" font-weight="700" letter-spacing="1.2" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">ONE INTEGRATED PORTAL</text>
+    <text x="292" y="240" fill="#F2F6FD" font-size="24" font-weight="800" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">Informasi dan layanan dalam satu tempat.</text>
+    <text x="292" y="262" fill="#8B9AB1" font-size="10" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">Cari informasi, akses layanan, dan pantau pengumuman terbaru.</text>
+    <rect x="292" y="280" width="160" height="26" rx="7" fill="#0EA5E9"/>
+    <text x="372" y="297" fill="#07101F" font-size="9" font-weight="800" text-anchor="middle" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">Mulai sekarang</text>
+    <rect x="464" y="280" width="160" height="26" rx="7" fill="none" stroke="rgba(255,255,255,0.14)"/>
+    <text x="544" y="297" fill="#C6D2E3" font-size="9" text-anchor="middle" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">Lihat informasi</text>
+    <g opacity="0.9">
+      <circle cx="1004" cy="246" r="52" fill="none" stroke="rgba(14, 165, 233, 0.3)"/>
+      <circle cx="1004" cy="246" r="36" fill="none" stroke="rgba(14, 165, 233, 0.5)"/>
+      <circle cx="1004" cy="246" r="20" fill="rgba(14, 165, 233, 0.16)"/>
+      <circle cx="1004" cy="246" r="6" fill="#0EA5E9"/>
+      <circle cx="1076" cy="206" r="4" fill="#0EA5E9"/>
+      <circle cx="944" cy="300" r="3" fill="#0EA5E9"/>
+    </g>
+    <text x="268" y="328" fill="#E7EEF9" font-size="12" font-weight="700" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">Popular services</text>
+    
+      <rect x="268" y="344" width="274" height="150" rx="12" fill="url(#panel)" stroke="rgba(255,255,255,0.07)"/>
+      <rect x="284" y="360" width="30" height="30" rx="8" fill="rgba(14, 165, 233, 0.15)"/>
+      <circle cx="299" cy="377" r="5" fill="none" stroke="#0EA5E9" stroke-width="1.4"/>
+      <text x="326" y="372" fill="#E7EEF9" font-size="11" font-weight="700" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">Informasi terbaru</text>
+      <text x="326" y="388" fill="#6C7B92" font-size="8" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">Publik</text>
+      <text x="284" y="424" fill="#8B9AB1" font-size="9" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">Berita dan pengumuman terbaru</text>
+      <text x="284" y="440" fill="#8B9AB1" font-size="9" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">dari instansi.</text>
+      <text x="284" y="470" fill="#0EA5E9" font-size="9" font-weight="700" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">Buka →</text>
+      <rect x="563" y="344" width="274" height="150" rx="12" fill="url(#panel)" stroke="rgba(255,255,255,0.07)"/>
+      <rect x="579" y="360" width="30" height="30" rx="8" fill="rgba(14, 165, 233, 0.15)"/>
+      <circle cx="594" cy="377" r="5" fill="none" stroke="#0EA5E9" stroke-width="1.4"/>
+      <text x="621" y="372" fill="#E7EEF9" font-size="11" font-weight="700" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">Layanan online</text>
+      <text x="621" y="388" fill="#6C7B92" font-size="8" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">Layanan</text>
+      <text x="579" y="424" fill="#8B9AB1" font-size="9" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">Akses layanan dan pengajuan</text>
+      <text x="579" y="440" fill="#8B9AB1" font-size="9" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">secara digital.</text>
+      <text x="579" y="470" fill="#0EA5E9" font-size="9" font-weight="700" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">Buka →</text>
+      <rect x="858" y="344" width="274" height="150" rx="12" fill="url(#panel)" stroke="rgba(255,255,255,0.07)"/>
+      <rect x="874" y="360" width="30" height="30" rx="8" fill="rgba(14, 165, 233, 0.15)"/>
+      <circle cx="889" cy="377" r="5" fill="none" stroke="#0EA5E9" stroke-width="1.4"/>
+      <text x="916" y="372" fill="#E7EEF9" font-size="11" font-weight="700" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">Publikasi &amp; dokumen</text>
+      <text x="916" y="388" fill="#6C7B92" font-size="8" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">Dokumen</text>
+      <text x="874" y="424" fill="#8B9AB1" font-size="9" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">Unduh publikasi, panduan,</text>
+      <text x="874" y="440" fill="#8B9AB1" font-size="9" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">dan dokumen resmi.</text>
+      <text x="874" y="470" fill="#0EA5E9" font-size="9" font-weight="700" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">Buka →</text>
+    <rect x="268" y="516" width="864" height="172" rx="12" fill="url(#panel)" stroke="rgba(255,255,255,0.07)"/>
+    <text x="286" y="542" fill="#E7EEF9" font-size="12" font-weight="700" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">Recent announcements</text>
+    <text x="1098" y="542" fill="#0EA5E9" font-size="9" text-anchor="end" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">All announcements →</text>
+    
+        <circle cx="292" cy="574" r="3" fill="#0EA5E9"/>
+        <text x="308" y="578" fill="#C6D2E3" font-size="10" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">Pengumuman layanan terbaru</text>
+        <text x="1098" y="578" fill="#6C7B92" font-size="9" text-anchor="end" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">12 Feb 2025</text>
+        <line x1="286" y1="592" x2="1114" y2="592" stroke="rgba(255,255,255,0.05)"/>
+        <circle cx="292" cy="612" r="3" fill="#0EA5E9"/>
+        <text x="308" y="616" fill="#C6D2E3" font-size="10" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">Jadwal pemeliharaan sistem</text>
+        <text x="1098" y="616" fill="#6C7B92" font-size="9" text-anchor="end" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">09 Feb 2025</text>
+        <line x1="286" y1="630" x2="1114" y2="630" stroke="rgba(255,255,255,0.05)"/>
+        <circle cx="292" cy="650" r="3" fill="#0EA5E9"/>
+        <text x="308" y="654" fill="#C6D2E3" font-size="10" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">Panduan penggunaan portal</text>
+        <text x="1098" y="654" fill="#6C7B92" font-size="9" text-anchor="end" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">02 Feb 2025</text>
+        
+  </g>
+  <text x="1140" y="739" fill="#43516A" font-size="8" text-anchor="end" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">Illustrative UI preview · Dinas Lingkungan Hidup DKI Jakarta</text>
+</svg>

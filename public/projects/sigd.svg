@@ -1,0 +1,158 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-label="SIGD interface preview">
+  
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0B1224"/>
+      <stop offset="1" stop-color="#070B14"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#22C55E"/>
+      <stop offset="1" stop-color="rgba(34, 197, 94, 0.55)"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#141E33"/>
+      <stop offset="1" stop-color="#0F1728"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.15" cy="0" r="0.8">
+      <stop offset="0" stop-color="rgba(34, 197, 94, 0.35)"/>
+      <stop offset="1" stop-color="rgba(34, 197, 94, 0)"/>
+    </radialGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="rgba(255,255,255,0.035)" stroke-width="1"/>
+    </pattern>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#000" flood-opacity="0.45"/>
+    </filter>
+    <clipPath id="windowClip">
+      <rect x="41" y="89" width="1118" height="630" rx="19"/>
+    </clipPath>
+  </defs>
+  <rect width="1200" height="760" fill="url(#bg)"/>
+  <rect width="1200" height="760" fill="url(#glow)"/>
+  <rect width="1200" height="760" fill="url(#grid)"/>
+  
+  <g filter="url(#shadow)">
+    <rect x="40" y="40" width="1120" height="680" rx="20" fill="#0C1424" stroke="rgba(255,255,255,0.10)"/>
+  </g>
+  <rect x="40" y="40" width="1120" height="48" rx="20" fill="#0F192C"/>
+  <rect x="40" y="70" width="1120" height="18" fill="#0F192C"/>
+  <line x1="40" y1="88" x2="1160" y2="88" stroke="rgba(255,255,255,0.07)"/>
+  <circle cx="68" cy="64" r="5" fill="#FF5F57"/>
+  <circle cx="86" cy="64" r="5" fill="#FEBC2E"/>
+  <circle cx="104" cy="64" r="5" fill="#28C840"/>
+  <rect x="132" y="53" width="470" height="24" rx="12" fill="#0A1220" stroke="rgba(255,255,255,0.06)"/>
+  <path d="M150 65v-4a4 4 0 0 1 8 0v4M149 65h10v7h-10z" fill="none" stroke="rgba(34, 197, 94, 0.9)" stroke-width="1.4"/>
+  <text x="168" y="69" fill="#93A2BA" font-size="11" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">sigd.go.id</text>
+  <rect x="1092" y="55" width="30" height="20" rx="6" fill="rgba(34, 197, 94, 0.16)"/>
+  <text x="1107" y="69" fill="#22C55E" font-size="9" text-anchor="middle" font-family="Manrope, ui-sans-serif, system-ui, sans-serif" font-weight="700">SI</text>
+  <g clip-path="url(#windowClip)">
+    
+  <rect x="40" y="88" width="196" height="632" fill="#0B1424"/>
+  <line x1="236" y1="88" x2="236" y2="720" stroke="rgba(255,255,255,0.07)"/>
+  <rect x="64" y="112" width="34" height="34" rx="10" fill="url(#accent)"/>
+  <text x="81" y="134" fill="#fff" font-size="12" font-weight="800" text-anchor="middle" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">SI</text>
+  <text x="108" y="126" fill="#EEF3FB" font-size="13" font-weight="800" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">SIGD</text>
+  <text x="108" y="141" fill="#728199" font-size="9" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">Workspace</text>
+  <text x="64" y="172" fill="#5B6980" font-size="9" letter-spacing="1.4" font-family="Manrope, ui-sans-serif, system-ui, sans-serif" font-weight="700">MENU</text>
+  
+    <g>
+      <rect x="60" y="184" width="156" height="32" rx="8" fill="rgba(34, 197, 94, 0.14)"/>
+      <circle cx="76" cy="200" r="3.5" fill="#22C55E"/>
+      <text x="90" y="204" fill="#EAF0FB" font-size="12" font-family="Manrope, ui-sans-serif, system-ui, sans-serif" font-weight="700">Dashboard</text>
+    </g>
+    <g>
+      
+      <circle cx="76" cy="244" r="3.5" fill="#5B6980"/>
+      <text x="90" y="248" fill="#8492A9" font-size="12" font-family="Manrope, ui-sans-serif, system-ui, sans-serif" font-weight="500">Inventarisasi</text>
+    </g>
+    <g>
+      
+      <circle cx="76" cy="288" r="3.5" fill="#5B6980"/>
+      <text x="90" y="292" fill="#8492A9" font-size="12" font-family="Manrope, ui-sans-serif, system-ui, sans-serif" font-weight="500">Faktor Emisi</text>
+    </g>
+    <g>
+      
+      <circle cx="76" cy="332" r="3.5" fill="#5B6980"/>
+      <text x="90" y="336" fill="#8492A9" font-size="12" font-family="Manrope, ui-sans-serif, system-ui, sans-serif" font-weight="500">Laporan</text>
+    </g>
+  <rect x="56" y="660" width="164" height="44" rx="10" fill="#101C30" stroke="rgba(255,255,255,0.06)"/>
+  <circle cx="76" cy="682" r="11" fill="rgba(34, 197, 94, 0.2)"/>
+  <text x="76" y="686" fill="#22C55E" font-size="9" font-weight="700" text-anchor="middle" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">IW</text>
+  <text x="94" y="679" fill="#D8E2F2" font-size="10" font-weight="700" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">Ilham Wara</text>
+  <text x="94" y="692" fill="#6C7B92" font-size="8" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">Administrator</text>
+    
+    
+  <text x="268" y="132" fill="#F2F6FD" font-size="21" font-weight="800" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">Overview</text>
+  <text x="268" y="152" fill="#7C8AA1" font-size="11" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">Ringkasan data dan aktivitas terbaru</text>
+  <rect x="878" y="112" width="180" height="30" rx="8" fill="#0E192B" stroke="rgba(255,255,255,0.07)"/>
+  <circle cx="894" cy="127" r="4" fill="none" stroke="#6C7B92" stroke-width="1.4"/>
+  <line x1="897" y1="130" x2="901" y2="134" stroke="#6C7B92" stroke-width="1.4"/>
+  <text x="910" y="131" fill="#5F6E85" font-size="10" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">Search anything…</text>
+  <rect x="1068" y="112" width="64" height="30" rx="8" fill="#22C55E"/>
+  <text x="1100" y="131" fill="#07101F" font-size="10" font-weight="800" text-anchor="middle" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">Export</text>
+    
+  <rect x="268" y="176" width="204" height="94" rx="12" fill="url(#panel)" stroke="rgba(255,255,255,0.07)"/>
+  <text x="284" y="200" fill="#7C8AA1" font-size="10" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">Total records</text>
+  <text x="284" y="230" fill="#F2F6FD" font-size="26" font-weight="800" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">12,844</text>
+  <rect x="284" y="242" width="52" height="16" rx="8" fill="rgba(34, 197, 94, 0.16)"/>
+  <text x="310" y="253" fill="#22C55E" font-size="8" font-weight="700" text-anchor="middle" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">+8.2%</text>
+  <text x="344" y="253" fill="#5F6E85" font-size="8" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">vs last month</text>
+    
+  <rect x="484" y="176" width="204" height="94" rx="12" fill="url(#panel)" stroke="rgba(255,255,255,0.07)"/>
+  <text x="500" y="200" fill="#7C8AA1" font-size="10" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">Active this month</text>
+  <text x="500" y="230" fill="#F2F6FD" font-size="26" font-weight="800" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">1,206</text>
+  <rect x="500" y="242" width="52" height="16" rx="8" fill="rgba(34, 197, 94, 0.16)"/>
+  <text x="526" y="253" fill="#22C55E" font-size="8" font-weight="700" text-anchor="middle" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">+3.1%</text>
+  <text x="560" y="253" fill="#5F6E85" font-size="8" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">vs last month</text>
+    
+  <rect x="700" y="176" width="204" height="94" rx="12" fill="url(#panel)" stroke="rgba(255,255,255,0.07)"/>
+  <text x="716" y="200" fill="#7C8AA1" font-size="10" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">Pending review</text>
+  <text x="716" y="230" fill="#F2F6FD" font-size="26" font-weight="800" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">38</text>
+  <rect x="716" y="242" width="52" height="16" rx="8" fill="rgba(34, 197, 94, 0.16)"/>
+  <text x="742" y="253" fill="#22C55E" font-size="8" font-weight="700" text-anchor="middle" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">−4.6%</text>
+  <text x="776" y="253" fill="#5F6E85" font-size="8" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">vs last month</text>
+    <rect x="916" y="176" width="216" height="94" rx="12" fill="rgba(34, 197, 94, 0.1)" stroke="rgba(34, 197, 94, 0.28)"/>
+    <text x="932" y="200" fill="#22C55E" font-size="10" font-family="Manrope, ui-sans-serif, system-ui, sans-serif" font-weight="700">SYSTEM STATUS</text>
+    <circle cx="938" cy="222" r="4" fill="#22C55E"/>
+    <text x="950" y="226" fill="#DCE7F6" font-size="11" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">All services operational</text>
+    <text x="932" y="250" fill="#7C8AA1" font-size="9" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">Last sync 2 minutes ago</text>
+    <rect x="268" y="292" width="520" height="234" rx="12" fill="url(#panel)" stroke="rgba(255,255,255,0.07)"/>
+    <text x="286" y="318" fill="#E7EEF9" font-size="12" font-weight="700" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">Records trend</text>
+    <text x="286" y="334" fill="#62718A" font-size="9" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">Last 10 months</text>
+    <rect x="672" y="304" width="54" height="20" rx="6" fill="#0C1526" stroke="rgba(255,255,255,0.07)"/>
+    <text x="699" y="318" fill="#8B9AB1" font-size="8" text-anchor="middle" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">Monthly</text>
+    
+    <linearGradient id="area" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="rgba(34, 197, 94, 0.38)"/>
+      <stop offset="1" stop-color="rgba(34, 197, 94, 0)"/>
+    </linearGradient>
+    <line x1="290" y1="390.5" x2="766" y2="390.5" stroke="rgba(255,255,255,0.05)"/><line x1="290" y1="427" x2="766" y2="427" stroke="rgba(255,255,255,0.05)"/><line x1="290" y1="463.5" x2="766" y2="463.5" stroke="rgba(255,255,255,0.05)"/>
+    <path d="M 290.0 419.7 L 342.9 438.7 L 395.8 412.4 L 448.7 444.5 L 501.6 427.0 L 554.4 459.1 L 607.3 447.4 L 660.2 470.8 L 713.1 465.0 L 766.0 485.4 L 766 500 L 290 500 Z" fill="url(#area)"/>
+    <path d="M 290.0 419.7 L 342.9 438.7 L 395.8 412.4 L 448.7 444.5 L 501.6 427.0 L 554.4 459.1 L 607.3 447.4 L 660.2 470.8 L 713.1 465.0 L 766.0 485.4" fill="none" stroke="#22C55E" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="290.0" cy="419.7" r="2.5" fill="#22C55E" opacity="0.35"/><circle cx="342.9" cy="438.7" r="2.5" fill="#22C55E" opacity="0.35"/><circle cx="395.8" cy="412.4" r="2.5" fill="#22C55E" opacity="0.35"/><circle cx="448.7" cy="444.5" r="2.5" fill="#22C55E" opacity="0.35"/><circle cx="501.6" cy="427.0" r="2.5" fill="#22C55E" opacity="0.35"/><circle cx="554.4" cy="459.1" r="2.5" fill="#22C55E" opacity="0.35"/><circle cx="607.3" cy="447.4" r="2.5" fill="#22C55E" opacity="0.35"/><circle cx="660.2" cy="470.8" r="2.5" fill="#22C55E" opacity="0.35"/><circle cx="713.1" cy="465.0" r="2.5" fill="#22C55E" opacity="0.35"/><circle cx="766.0" cy="485.4" r="2.5" fill="#22C55E" opacity="1"/>
+    <rect x="804" y="292" width="328" height="234" rx="12" fill="url(#panel)" stroke="rgba(255,255,255,0.07)"/>
+    <text x="822" y="318" fill="#E7EEF9" font-size="12" font-weight="700" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">By category</text>
+    
+        <text x="822" y="348" fill="#A9B7CB" font-size="9" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">Operations</text>
+        <text x="1114" y="348" fill="#74839A" font-size="9" text-anchor="end" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">78%</text>
+        <rect x="822" y="356" width="292" height="6" rx="3" fill="#182337"/>
+        <rect x="822" y="356" width="227.76" height="6" rx="3" fill="#22C55E" opacity="0.9"/>
+        <text x="822" y="388" fill="#A9B7CB" font-size="9" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">Monitoring</text>
+        <text x="1114" y="388" fill="#74839A" font-size="9" text-anchor="end" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">62%</text>
+        <rect x="822" y="396" width="292" height="6" rx="3" fill="#182337"/>
+        <rect x="822" y="396" width="181.04" height="6" rx="3" fill="#22C55E" opacity="0.75"/>
+        <text x="822" y="428" fill="#A9B7CB" font-size="9" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">Reports</text>
+        <text x="1114" y="428" fill="#74839A" font-size="9" text-anchor="end" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">48%</text>
+        <rect x="822" y="436" width="292" height="6" rx="3" fill="#182337"/>
+        <rect x="822" y="436" width="140.16" height="6" rx="3" fill="#22C55E" opacity="0.6000000000000001"/>
+        <text x="822" y="468" fill="#A9B7CB" font-size="9" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">Archive</text>
+        <text x="1114" y="468" fill="#74839A" font-size="9" text-anchor="end" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">34%</text>
+        <rect x="822" y="476" width="292" height="6" rx="3" fill="#182337"/>
+        <rect x="822" y="476" width="99.28" height="6" rx="3" fill="#22C55E" opacity="0.45000000000000007"/>
+    <rect x="268" y="546" width="864" height="142" rx="12" fill="url(#panel)" stroke="rgba(255,255,255,0.07)"/>
+    <text x="286" y="572" fill="#E7EEF9" font-size="12" font-weight="700" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">Recent submissions</text>
+    <text x="1098" y="572" fill="#22C55E" font-size="9" text-anchor="end" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">View all →</text>
+    <line x1="284" y1="614" x2="1094" y2="614" stroke="rgba(255,255,255,0.08)"/><text x="298" y="606" fill="#5F6E85" font-size="8" letter-spacing="0.8" font-family="Manrope, ui-sans-serif, system-ui, sans-serif" font-weight="700">REFERENCE</text><text x="478" y="606" fill="#5F6E85" font-size="8" letter-spacing="0.8" font-family="Manrope, ui-sans-serif, system-ui, sans-serif" font-weight="700">UNIT</text><text x="808" y="606" fill="#5F6E85" font-size="8" letter-spacing="0.8" font-family="Manrope, ui-sans-serif, system-ui, sans-serif" font-weight="700">DATE</text><text x="978" y="606" fill="#5F6E85" font-size="8" letter-spacing="0.8" font-family="Manrope, ui-sans-serif, system-ui, sans-serif" font-weight="700">STATUS</text><line x1="284" y1="644" x2="1094" y2="644" stroke="rgba(255,255,255,0.05)"/><text x="298" y="626" fill="#B9C6D9" font-size="9.5" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">REF-2025-0841</text><text x="478" y="626" fill="#B9C6D9" font-size="9.5" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">Unit Pelaksana 01</text><text x="808" y="626" fill="#B9C6D9" font-size="9.5" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">12 Feb 2025</text><rect x="978" y="614" width="62" height="17" rx="8" fill="rgba(34, 197, 94, 0.16)"/><text x="1009" y="626" text-anchor="middle" fill="#22C55E" font-size="8" font-weight="700" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">Verified</text><line x1="284" y1="680" x2="1094" y2="680" stroke="rgba(255,255,255,0.05)"/><text x="298" y="662" fill="#B9C6D9" font-size="9.5" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">REF-2025-0840</text><text x="478" y="662" fill="#B9C6D9" font-size="9.5" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">Unit Pelaksana 02</text><text x="808" y="662" fill="#B9C6D9" font-size="9.5" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">11 Feb 2025</text><rect x="978" y="650" width="62" height="17" rx="8" fill="rgba(34, 197, 94, 0.16)"/><text x="1009" y="662" text-anchor="middle" fill="#22C55E" font-size="8" font-weight="700" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">Pending</text><line x1="284" y1="716" x2="1094" y2="716" stroke="rgba(255,255,255,0.05)"/><text x="298" y="698" fill="#B9C6D9" font-size="9.5" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">REF-2025-0839</text><text x="478" y="698" fill="#B9C6D9" font-size="9.5" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">Unit Pelaksana 03</text><text x="808" y="698" fill="#B9C6D9" font-size="9.5" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">10 Feb 2025</text><rect x="978" y="686" width="62" height="17" rx="8" fill="rgba(34, 197, 94, 0.16)"/><text x="1009" y="698" text-anchor="middle" fill="#22C55E" font-size="8" font-weight="700" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">Verified</text>
+  </g>
+  <text x="1140" y="739" fill="#43516A" font-size="8" text-anchor="end" font-family="Manrope, ui-sans-serif, system-ui, sans-serif">Illustrative UI preview · Dinas Lingkungan Hidup DKI Jakarta</text>
+</svg>
