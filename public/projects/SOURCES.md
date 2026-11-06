@@ -1,7 +1,8 @@
 # Project visual sources
 
-Captured/created on 2026-11-05. Screenshots are from public pages or a private
-demo deployment; no authenticated client data is shown.
+Captured/created on 2026-11-05, with SIPT and E-Performance added on
+2026-11-06. Screenshots are from public pages or a private demo deployment; no
+authenticated client data is shown.
 
 | Project | Cover file | Source |
 | --- | --- | --- |
@@ -9,6 +10,8 @@ demo deployment; no authenticated client data is shown.
 | SIMPATIK | `simpatik-live.jpg` | https://simpatik.smaangkasa2.sch.id/ |
 | E-Library | `e-library-live.jpg` | https://library.smaangkasa2.sch.id/ |
 | SMARTPOM | `smartpom-live.jpg` | https://smartpom.pom.go.id/login |
+| SIPT | `sipt-live.jpg` | https://sipt.pom.go.id/login |
+| E-Performance | `eperformance-live.jpg` | https://simetris.pom.go.id/eperformance_new/ |
 | Anxious Creation | `anxious-live.jpg` | https://anxious-app.vercel.app/ |
 | Echowheel | `echowheel-live.jpg` | local Vite build (`npm run dev`) |
 | SMA Angkasa 2 | `sma-angkasa-2-live.jpg` | https://smaangkasa2.sch.id/ |

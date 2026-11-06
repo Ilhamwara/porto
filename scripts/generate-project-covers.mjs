@@ -34,6 +34,8 @@ const projects = [
   { slug: "simpatik", app: "SIMPATIK", client: "SMA Angkasa 2", accent: "#FF7A45", variant: "school", nav: ["Dashboard", "Siswa", "Akademik", "Raport"] },
   { slug: "e-library", app: "E-Library", client: "SMA Angkasa 2", accent: "#8B5CF6", variant: "library", nav: ["Discover", "Koleksi", "Peminjaman", "Kunjungan"] },
   { slug: "smartpom", app: "SMARTPOM", client: "BPOM RI", accent: "#E5484D", variant: "dashboard", nav: ["Overview", "Pemeriksaan", "CAPA", "Laporan"] },
+  { slug: "sipt", app: "SIPT", client: "BPOM RI", accent: "#0EA5E9", variant: "portal", nav: ["Beranda", "Pengujian", "Laporan", "Pihak 3"] },
+  { slug: "eperformance", app: "E-Performance", client: "BPOM RI", accent: "#7C3AED", variant: "dashboard", nav: ["Dashboard", "IKU", "Anggaran", "Laporan"] },
   { slug: "anxious", app: "Anxious", client: "Anxious Creation", accent: "#E11D48", variant: "commerce", nav: ["Storefront", "Products", "Orders", "Reports"] },
   { slug: "ewas-golang", app: "EWAS", client: "BPOM RI", accent: "#0EA5E9", variant: "pipeline", nav: ["Overview", "Pipeline", "Mapping", "Logs"] },
   { slug: "echowheel", app: "Echowheel", client: "Independent product", accent: "#A3E635", variant: "map", nav: ["Dashboard", "Rentals", "Tracking", "Wallet"] },

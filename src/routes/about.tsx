@@ -13,6 +13,7 @@ import {
   Sparkles,
 } from "lucide-react";
 import { profile } from "@/data/profile";
+import { projects } from "@/data/projects";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
@@ -124,7 +125,7 @@ function AboutPage() {
                 {[
                   ["20+", "Systems"],
                   ["6+", "Gov clients"],
-                  ["13", "Case studies"],
+                  [String(projects.length), "Case studies"],
                 ].map(([n, l]) => (
                   <div key={l} className="p-5 text-center">
                     <p className="font-display text-2xl font-bold">{n}</p>
