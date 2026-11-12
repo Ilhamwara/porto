@@ -6,6 +6,7 @@ const nav = [
   { to: "/projects", label: "Work" },
   { to: "/about", label: "About" },
   { to: "/experience", label: "Experience" },
+  { to: "/ratecard", label: "Rate card" },
   { to: "/contact", label: "Contact" },
 ] as const;
 
@@ -43,7 +44,7 @@ export function SiteHeader() {
           </span>
         </Link>
 
-        <nav aria-label="Primary" className="hidden items-center gap-1 md:flex">
+        <nav aria-label="Primary" className="hidden items-center gap-1 lg:flex">
           {nav.map((n) => (
             <Link
               key={n.to}
@@ -56,7 +57,7 @@ export function SiteHeader() {
           ))}
         </nav>
 
-        <div className="hidden items-center gap-3 md:flex">
+        <div className="hidden items-center gap-3 lg:flex">
           <Link to="/contact" className="btn btn-dark text-[13px]">
             Start a project
             <ArrowUpRight className="h-4 w-4" />
@@ -69,7 +70,7 @@ export function SiteHeader() {
           aria-expanded={open}
           aria-controls="mobile-nav"
           aria-label={open ? "Close menu" : "Open menu"}
-          className="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-border bg-surface text-foreground md:hidden"
+          className="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-border bg-surface text-foreground lg:hidden"
         >
           {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
         </button>
@@ -78,7 +79,7 @@ export function SiteHeader() {
       {open && (
         <div
           id="mobile-nav"
-          className="border-t border-border bg-background px-5 pb-6 pt-3 md:hidden"
+          className="border-t border-border bg-background px-5 pb-6 pt-3 lg:hidden"
         >
           <nav aria-label="Mobile" className="flex flex-col">
             {nav.map((n) => (
