@@ -149,9 +149,6 @@ function ProductsIndex() {
                 <p className="mt-1.5 text-sm leading-relaxed text-muted-foreground">
                   {product.tagline}
                 </p>
-                <p className="mt-4 font-display text-sm font-semibold text-primary">
-                  {product.startingPrice}
-                </p>
                 <ul className="mt-4 space-y-1.5 border-t border-border pt-4">
                   {product.modules.slice(0, 3).map((module) => (
                     <li

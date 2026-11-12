@@ -12,7 +12,6 @@ export type Product = {
   category: ProductCategory;
   tagline: string;
   description: string;
-  startingPrice: string;
   bestFor: string[];
   modules: string[];
   deployment: string[];
@@ -31,7 +30,6 @@ export const products: Product[] = [
     tagline: "Platform belajar, kuis, dan sertifikat untuk sekolah, kampus, dan perusahaan.",
     description:
       "Learning Management System untuk mengelola materi, tugas, kuis, progres peserta, dan sertifikat dalam satu tempat. Bisa dimulai dari satu program atau satu divisi, lalu diperluas.",
-    startingPrice: "Dari Rp 25jt",
     bestFor: [
       "Sekolah, kampus, dan lembaga kursus",
       "Corporate training dan onboarding",
@@ -77,7 +75,6 @@ export const products: Product[] = [
     tagline: "Hubungkan aplikasi internal dengan SAP/ERP tanpa input ganda.",
     description:
       "Layanan integrasi untuk menghubungkan aplikasi internal, portal, atau sistem baru dengan SAP/ERP. Fokus pada sinkronisasi master data, transaksi, inventory, dan laporan — bukan penjualan lisensi SAP.",
-    startingPrice: "Custom quote",
     bestFor: [
       "Perusahaan yang sudah memakai SAP/ERP",
       "Manufaktur, distribusi, dan BUMN",
@@ -125,7 +122,6 @@ export const products: Product[] = [
     tagline: "Sistem operasional yang mengikuti proses bisnis Anda.",
     description:
       "Sistem informasi kustom untuk mengelola data, alur kerja, hak akses, laporan, dan audit trail. Cocok untuk proses back-office yang masih manual atau tersebar di banyak file.",
-    startingPrice: "Dari Rp 40jt",
     bestFor: [
       "Instansi pemerintah dan BUMD",
       "Perusahaan dengan proses multi-unit",
@@ -171,7 +167,6 @@ export const products: Product[] = [
     tagline: "Aplikasi Android/iOS untuk pelanggan, field team, dan layanan publik.",
     description:
       "Aplikasi mobile yang terhubung ke API yang sama dengan sistem web. Bisa untuk pelanggan, petugas lapangan, atau layanan publik dengan kebutuhan offline dan notifikasi.",
-    startingPrice: "Dari Rp 40jt",
     bestFor: [
       "Layanan publik dan pelanggan",
       "Tim lapangan dan operasional",
@@ -217,7 +212,6 @@ export const products: Product[] = [
     tagline: "Data karyawan, cuti, approval, dan dokumen HR dalam satu sistem.",
     description:
       "HR Information System untuk merapikan data karyawan, struktur organisasi, cuti, approval, dokumen, dan laporan HR. Bisa terhubung dengan sistem absensi dan payroll yang sudah ada.",
-    startingPrice: "Dari Rp 25jt",
     bestFor: [
       "Perusahaan 50–500 karyawan",
       "Grup usaha dengan beberapa entitas",
@@ -263,7 +257,6 @@ export const products: Product[] = [
     tagline: "Absensi QR/GPS/selfie, shift, izin, dan rekap otomatis.",
     description:
       "Sistem absensi untuk karyawan, petugas lapangan, atau siswa. Mendukung QR, GPS geofence, selfie, shift, izin, dan rekap yang bisa diekspor ke payroll.",
-    startingPrice: "Dari Rp 15jt",
     bestFor: [
       "Tim lapangan dan cabang",
       "Pabrik, retail, dan jasa",
@@ -309,7 +302,6 @@ export const products: Product[] = [
     tagline: "Toko online dengan katalog, checkout, payment, dan shipping.",
     description:
       "Platform e-commerce untuk brand lokal: katalog, varian, keranjang, checkout, voucher, pembayaran, pengiriman, dan admin order. Bisa dimulai dari storefront sederhana lalu berkembang.",
-    startingPrice: "Dari Rp 15jt",
     bestFor: [
       "Brand lokal dan UMKM",
       "Distributor dengan katalog besar",
@@ -355,7 +347,6 @@ export const products: Product[] = [
     tagline: "Surat menyurat, disposisi, arsip, dan tracking dalam satu alur.",
     description:
       "E-Office untuk mengelola surat masuk dan keluar, disposisi berjenjang, template dokumen, arsip, dan tracking. Cocok untuk instansi yang masih memproses surat secara manual.",
-    startingPrice: "Dari Rp 25jt",
     bestFor: [
       "Instansi pemerintah dan BUMD",
       "Perusahaan dengan alur disposisi",
@@ -401,7 +392,6 @@ export const products: Product[] = [
     tagline: "Keterbukaan informasi publik: permohonan, keberatan, publikasi, dan tracking.",
     description:
       "Portal PPID untuk menerima permohonan informasi, pengajuan keberatan, publikasi dokumen, dan tracking status. Bisa tersedia dalam versi web dan mobile.",
-    startingPrice: "Dari Rp 25jt",
     bestFor: [
       "Instansi publik dan BUMD",
       "Kementerian, pemerintah daerah",
@@ -447,7 +437,6 @@ export const products: Product[] = [
     tagline: "Akademik, PPDB, keuangan, dan komunikasi sekolah dalam satu sistem.",
     description:
       "Sistem informasi manajemen sekolah untuk data siswa/guru, kelas, jadwal, nilai, absensi, PPDB, keuangan, dan portal orang tua. Bisa dimulai dari modul akademik lalu diperluas.",
-    startingPrice: "Dari Rp 25jt",
     bestFor: [
       "SMA, SMK, dan sekolah swasta",
       "Yayasan dengan beberapa sekolah",

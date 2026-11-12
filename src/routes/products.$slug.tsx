@@ -123,7 +123,7 @@ function ProductDetail() {
                 {product.category}
               </span>
               <span className="rounded-md bg-primary/10 px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider text-primary">
-                {product.startingPrice}
+                Bisa dikustomisasi
               </span>
             </div>
             <h1 className="mt-4 font-display text-4xl font-bold leading-[1.05] sm:text-5xl md:text-6xl">
