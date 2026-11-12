@@ -306,6 +306,56 @@ function HomePage() {
         </div>
       </section>
 
+      {/* AI & accountability */}
+      <section
+        aria-labelledby="accountability"
+        className="mx-auto max-w-7xl px-5 py-16 sm:px-8 md:py-24"
+      >
+        <div className="grid gap-8 border-y border-border py-10 lg:grid-cols-[0.3fr_0.7fr] lg:gap-16 lg:py-14">
+          <div>
+            <p className="eyebrow">
+              <span className="h-px w-6 bg-primary" /> On AI &amp; accountability
+            </p>
+            <p className="mt-4 max-w-xs text-xs leading-relaxed text-muted-foreground">
+              A note for anyone comparing AI-generated code with a system that
+              has to survive production.
+            </p>
+          </div>
+
+          <div>
+            <span aria-hidden="true" className="block font-display text-5xl leading-none text-primary/25">
+              &ldquo;
+            </span>
+            <blockquote id="accountability" className="mt-2">
+              <p className="font-display text-[1.55rem] font-semibold leading-[1.2] tracking-[-0.03em] sm:text-4xl sm:leading-[1.12] lg:text-[2.75rem]">
+                AI bisa membuat kode. Yang tidak bisa AI lakukan adalah{" "}
+                <span className="relative inline-block">
+                  bertanggung jawab
+                  <span className="absolute inset-x-0 bottom-0.5 -z-10 h-2.5 bg-lime/80 sm:h-3.5" />
+                </span>{" "}
+                kalau sistem down, data bocor, atau laporan tidak diterima
+                instansi.
+              </p>
+            </blockquote>
+            <p className="mt-6 max-w-2xl text-base font-semibold leading-relaxed text-foreground">
+              I sell systems that are secure, integrated, and accountable — not
+              just code.
+            </p>
+            <div className="mt-6 flex flex-wrap items-center gap-4">
+              <Link to="/contact" className="btn btn-dark">
+                Talk about your system <ArrowUpRight className="h-4 w-4" />
+              </Link>
+              <Link
+                to="/projects"
+                className="inline-flex items-center gap-1.5 text-sm font-semibold text-foreground transition-colors hover:text-primary"
+              >
+                See the proof <ArrowRight className="h-3.5 w-3.5" />
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Capabilities */}
       <section aria-labelledby="capabilities" className="mx-auto max-w-7xl px-5 sm:px-8">
         <div className="relative overflow-hidden rounded-3xl bg-dark px-6 py-14 text-dark-foreground sm:px-10 md:px-14 md:py-16">
