@@ -91,18 +91,51 @@ export const buildPackages: BuildPackage[] = [
   },
 ];
 
-export const addOns: Array<[string, string]> = [
-  ["Additional support (business hours)", "Rp 350.000/hour"],
-  ["Urgent / after-hours support", "Rp 600.000/hour"],
-  ["Product + variant entry", "Rp 75.000/product"],
-  ["Product photo editing", "Rp 35.000/photo"],
-  ["Admin training (2 hours)", "Rp 750.000/session"],
-  ["New VPS setup / deployment", "Rp 3.000.000"],
-  ["Migration from another platform", "Rp 3.000.000–7.500.000"],
-  ["New payment / courier integration", "Rp 4.000.000–7.500.000"],
-  ["SEO audit + technical fixes", "Rp 3.000.000"],
-  ["Promo landing page", "Rp 3.500.000"],
-  ["Priority SLA (4-hour response)", "Rp 6.000.000/year"],
+export const addOns: Array<{ name: string; note: string }> = [
+  {
+    name: "Additional support",
+    note: "Dihitung per jam pada jam kerja, sesuai kebutuhan.",
+  },
+  {
+    name: "Urgent / after-hours support",
+    note: "Untuk kebutuhan mendesak di luar jam kerja.",
+  },
+  {
+    name: "Product + variant entry",
+    note: "Input produk, varian, foto, dan deskripsi.",
+  },
+  {
+    name: "Product photo editing",
+    note: "Crop, retouch, dan optimasi ukuran.",
+  },
+  {
+    name: "Admin training",
+    note: "Sesi pelatihan untuk tim admin, durasi disepakati.",
+  },
+  {
+    name: "New VPS setup / deployment",
+    note: "Instalasi aplikasi, Nginx, SSL, dan backup.",
+  },
+  {
+    name: "Migration from another platform",
+    note: "Sesuai struktur data sumber dan volume konten.",
+  },
+  {
+    name: "New payment / courier integration",
+    note: "Sesuai API, dokumentasi, dan kebutuhan bisnis.",
+  },
+  {
+    name: "SEO audit + technical fixes",
+    note: "Audit on-page dan implementasi perbaikan dasar.",
+  },
+  {
+    name: "Promo landing page",
+    note: "Halaman kampanye terpisah dari situs utama.",
+  },
+  {
+    name: "Priority SLA",
+    note: "Respons lebih cepat dan jalur prioritas.",
+  },
 ];
 
 export const terms = [

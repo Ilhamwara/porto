@@ -308,7 +308,7 @@ function RateCardPage() {
               <span className="h-px w-6 bg-primary" /> C. Add-ons
             </p>
             <h2 id="addons" className="mt-3 font-display text-3xl font-bold">
-              Priced separately. Approved first.
+              Scope-based. Approved first.
             </h2>
             <p className="mt-3 max-w-sm text-sm leading-relaxed text-muted-foreground">
               Anything outside the package is quoted and approved in writing
@@ -317,24 +317,22 @@ function RateCardPage() {
             <div className="mt-6 flex items-start gap-3 rounded-xl bg-muted p-4">
               <ShieldCheck className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
               <p className="text-xs leading-relaxed text-muted-foreground">
-                Work outside the package is billed at the rate below or quoted
-                per scope when the effort is not predictable.
+                Add-on pricing is not listed because it depends on complexity.
+                Send the requirement and I will quote it separately.
               </p>
             </div>
           </div>
 
           <div className="overflow-hidden rounded-xl border border-border bg-surface">
-            {addOns.map(([name, price], i) => (
+            {addOns.map((addOn, i) => (
               <div
-                key={name}
-                className={`flex flex-col gap-1 px-5 py-3.5 sm:flex-row sm:items-center sm:justify-between ${
-                  i > 0 ? "border-t border-border" : ""
-                }`}
+                key={addOn.name}
+                className={`px-5 py-4 ${i > 0 ? "border-t border-border" : ""}`}
               >
-                <span className="text-sm">{name}</span>
-                <span className="shrink-0 font-mono text-xs font-semibold text-muted-foreground">
-                  {price}
-                </span>
+                <p className="text-sm font-medium">{addOn.name}</p>
+                <p className="mt-1 text-xs leading-relaxed text-muted-foreground">
+                  {addOn.note}
+                </p>
               </div>
             ))}
           </div>
