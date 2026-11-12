@@ -378,12 +378,20 @@ function HomePage() {
                 system. That's how the API, the interface, and the database
                 stay consistent.
               </p>
-              <Link
-                to="/about"
-                className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-lime"
-              >
-                More about how I work <ArrowRight className="h-4 w-4" />
-              </Link>
+              <div className="mt-6 flex flex-wrap items-center gap-5">
+                <Link
+                  to="/services"
+                  className="inline-flex items-center gap-2 text-sm font-semibold text-lime"
+                >
+                  Explore services <ArrowRight className="h-4 w-4" />
+                </Link>
+                <Link
+                  to="/about"
+                  className="inline-flex items-center gap-2 text-sm font-semibold text-dark-foreground/60 transition-colors hover:text-dark-foreground"
+                >
+                  How I work
+                </Link>
+              </div>
             </div>
 
             <div className="grid gap-px overflow-hidden rounded-2xl border border-white/10 bg-white/10 sm:grid-cols-2">
