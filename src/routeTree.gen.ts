@@ -16,8 +16,10 @@ import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as ServicesIndexRouteImport } from './routes/services.index'
 import { Route as ProjectsIndexRouteImport } from './routes/projects.index'
+import { Route as ProductsIndexRouteImport } from './routes/products.index'
 import { Route as ServicesSlugRouteImport } from './routes/services.$slug'
 import { Route as ProjectsSlugRouteImport } from './routes/projects.$slug'
+import { Route as ProductsSlugRouteImport } from './routes/products.$slug'
 
 const RatecardRoute = RatecardRouteImport.update({
   id: '/ratecard',
@@ -54,6 +56,11 @@ const ProjectsIndexRoute = ProjectsIndexRouteImport.update({
   path: '/projects/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ProductsIndexRoute = ProductsIndexRouteImport.update({
+  id: '/products/',
+  path: '/products/',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ServicesSlugRoute = ServicesSlugRouteImport.update({
   id: '/services/$slug',
   path: '/services/$slug',
@@ -64,6 +71,11 @@ const ProjectsSlugRoute = ProjectsSlugRouteImport.update({
   path: '/projects/$slug',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ProductsSlugRoute = ProductsSlugRouteImport.update({
+  id: '/products/$slug',
+  path: '/products/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -71,8 +83,10 @@ export interface FileRoutesByFullPath {
   '/contact': typeof ContactRoute
   '/experience': typeof ExperienceRoute
   '/ratecard': typeof RatecardRoute
+  '/products/$slug': typeof ProductsSlugRoute
   '/projects/$slug': typeof ProjectsSlugRoute
   '/services/$slug': typeof ServicesSlugRoute
+  '/products/': typeof ProductsIndexRoute
   '/projects/': typeof ProjectsIndexRoute
   '/services/': typeof ServicesIndexRoute
 }
@@ -82,8 +96,10 @@ export interface FileRoutesByTo {
   '/contact': typeof ContactRoute
   '/experience': typeof ExperienceRoute
   '/ratecard': typeof RatecardRoute
+  '/products/$slug': typeof ProductsSlugRoute
   '/projects/$slug': typeof ProjectsSlugRoute
   '/services/$slug': typeof ServicesSlugRoute
+  '/products': typeof ProductsIndexRoute
   '/projects': typeof ProjectsIndexRoute
   '/services': typeof ServicesIndexRoute
 }
@@ -94,8 +110,10 @@ export interface FileRoutesById {
   '/contact': typeof ContactRoute
   '/experience': typeof ExperienceRoute
   '/ratecard': typeof RatecardRoute
+  '/products/$slug': typeof ProductsSlugRoute
   '/projects/$slug': typeof ProjectsSlugRoute
   '/services/$slug': typeof ServicesSlugRoute
+  '/products/': typeof ProductsIndexRoute
   '/projects/': typeof ProjectsIndexRoute
   '/services/': typeof ServicesIndexRoute
 }
@@ -107,8 +125,10 @@ export interface FileRouteTypes {
     | '/contact'
     | '/experience'
     | '/ratecard'
+    | '/products/$slug'
     | '/projects/$slug'
     | '/services/$slug'
+    | '/products/'
     | '/projects/'
     | '/services/'
   fileRoutesByTo: FileRoutesByTo
@@ -118,8 +138,10 @@ export interface FileRouteTypes {
     | '/contact'
     | '/experience'
     | '/ratecard'
+    | '/products/$slug'
     | '/projects/$slug'
     | '/services/$slug'
+    | '/products'
     | '/projects'
     | '/services'
   id:
@@ -129,8 +151,10 @@ export interface FileRouteTypes {
     | '/contact'
     | '/experience'
     | '/ratecard'
+    | '/products/$slug'
     | '/projects/$slug'
     | '/services/$slug'
+    | '/products/'
     | '/projects/'
     | '/services/'
   fileRoutesById: FileRoutesById
@@ -141,8 +165,10 @@ export interface RootRouteChildren {
   ContactRoute: typeof ContactRoute
   ExperienceRoute: typeof ExperienceRoute
   RatecardRoute: typeof RatecardRoute
+  ProductsSlugRoute: typeof ProductsSlugRoute
   ProjectsSlugRoute: typeof ProjectsSlugRoute
   ServicesSlugRoute: typeof ServicesSlugRoute
+  ProductsIndexRoute: typeof ProductsIndexRoute
   ProjectsIndexRoute: typeof ProjectsIndexRoute
   ServicesIndexRoute: typeof ServicesIndexRoute
 }
@@ -198,6 +224,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ProjectsIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/products/': {
+      id: '/products/'
+      path: '/products'
+      fullPath: '/products/'
+      preLoaderRoute: typeof ProductsIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/services/$slug': {
       id: '/services/$slug'
       path: '/services/$slug'
@@ -212,6 +245,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ProjectsSlugRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/products/$slug': {
+      id: '/products/$slug'
+      path: '/products/$slug'
+      fullPath: '/products/$slug'
+      preLoaderRoute: typeof ProductsSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
@@ -221,8 +261,10 @@ const rootRouteChildren: RootRouteChildren = {
   ContactRoute: ContactRoute,
   ExperienceRoute: ExperienceRoute,
   RatecardRoute: RatecardRoute,
+  ProductsSlugRoute: ProductsSlugRoute,
   ProjectsSlugRoute: ProjectsSlugRoute,
   ServicesSlugRoute: ServicesSlugRoute,
+  ProductsIndexRoute: ProductsIndexRoute,
   ProjectsIndexRoute: ProjectsIndexRoute,
   ServicesIndexRoute: ServicesIndexRoute,
 }

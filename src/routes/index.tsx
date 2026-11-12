@@ -386,6 +386,12 @@ function HomePage() {
                   Explore services <ArrowRight className="h-4 w-4" />
                 </Link>
                 <Link
+                  to="/products"
+                  className="inline-flex items-center gap-2 text-sm font-semibold text-dark-foreground/70 transition-colors hover:text-dark-foreground"
+                >
+                  View products
+                </Link>
+                <Link
                   to="/about"
                   className="inline-flex items-center gap-2 text-sm font-semibold text-dark-foreground/60 transition-colors hover:text-dark-foreground"
                 >

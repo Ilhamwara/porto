@@ -152,6 +152,24 @@ function ServicesIndex() {
       </section>
 
       <section className="mx-auto max-w-7xl px-5 sm:px-8">
+        <div className="flex flex-col items-start justify-between gap-5 rounded-2xl border border-border bg-surface p-7 sm:flex-row sm:items-center">
+          <div>
+            <p className="eyebrow">Produk siap dikustomisasi</p>
+            <h2 className="mt-2 font-display text-2xl font-bold">
+              Butuh fondasi yang lebih siap pakai?
+            </h2>
+            <p className="mt-2 max-w-xl text-sm leading-relaxed text-muted-foreground">
+              LMS, HRIS, absensi, e-commerce, PPID, dan SIM sekolah bisa dimulai
+              dari modul inti lalu disesuaikan.
+            </p>
+          </div>
+          <Link to="/products" className="btn btn-dark shrink-0">
+            Lihat products <ArrowUpRight className="h-4 w-4" />
+          </Link>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-7xl px-5 py-16 sm:px-8 md:py-24">
         <div className="grid gap-5 lg:grid-cols-[1.2fr_0.8fr]">
           <div className="card p-7 sm:p-9">
             <p className="eyebrow">Kenapa saya</p>

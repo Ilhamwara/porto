@@ -5,6 +5,7 @@ import { profile } from "@/data/profile";
 const links = [
   { to: "/projects", label: "Work" },
   { to: "/services", label: "Services" },
+  { to: "/products", label: "Products" },
   { to: "/about", label: "About" },
   { to: "/experience", label: "Experience" },
   { to: "/ratecard", label: "Rate card" },

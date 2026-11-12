@@ -5,9 +5,9 @@ import { ArrowUpRight, Menu, X } from "lucide-react";
 const nav = [
   { to: "/projects", label: "Work" },
   { to: "/services", label: "Services" },
+  { to: "/products", label: "Products" },
   { to: "/about", label: "About" },
   { to: "/experience", label: "Experience" },
-  { to: "/ratecard", label: "Rate card" },
   { to: "/contact", label: "Contact" },
 ] as const;
 
@@ -58,7 +58,7 @@ export function SiteHeader() {
           ))}
         </nav>
 
-        <div className="hidden items-center gap-3 lg:flex">
+        <div className="hidden items-center gap-3 xl:flex">
           <Link to="/contact" className="btn btn-dark text-[13px]">
             Start a project
             <ArrowUpRight className="h-4 w-4" />
